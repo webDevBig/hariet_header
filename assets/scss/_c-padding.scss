@@ -1,0 +1,271 @@
+// Padding
+
+// Padding Top Classes pt-xx where xx is the size in px (reduced by 50% for mobile)
+.pt- {
+    &00 {
+        padding-top: 0px !important;
+    }
+
+    &05 {
+        padding-top: 2.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 5px !important;
+        }
+    }
+
+    &10 {
+        padding-top: 5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 10px !important;
+        }
+    }
+
+    &15 {
+        padding-top: 7.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 15px !important;
+        }
+    }
+
+    &20 {
+        padding-top: 10px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 20px !important;
+        }
+    }
+
+    &25 {
+        padding-top: 12.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 25px !important;
+        }
+    }
+
+    &30 {
+        padding-top: 15px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 30px !important;
+        }
+    }
+
+    &35 {
+        padding-top: 17.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 35px !important;
+        }
+    }
+
+    &40 {
+        padding-top: 20px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 40px !important;
+        }
+    }
+
+    &45 {
+        padding-top: 22.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 45px !important;
+        }
+    }
+
+    &50 {
+        padding-top: 25px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 50px !important;
+        }
+    }
+
+    &55 {
+        padding-top: 27.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 55px !important;
+        }
+    }
+
+    &60 {
+        padding-top: 30px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 60px !important;
+        }
+    }
+
+    &65 {
+        padding-top: 32.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 65px !important;
+        }
+    }
+
+    &70 {
+        padding-top: 35px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 70px !important;
+        }
+    }
+
+    &75 {
+        padding-top: 37.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 75px !important;
+        }
+    }
+
+    &80 {
+        padding-top: 40px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 80px !important;
+        }
+    }
+}
+
+// Padding Bottom Classes pb-xx where xx is the size in px (reduced by 50% for mobile)
+.pb- {
+    &00 {
+        padding-bottom: 0px !important;
+    }
+
+    &05 {
+        padding-bottom: 2.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 5px !important;
+        }
+    }
+
+    &10 {
+        padding-bottom: 5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 10px !important;
+        }
+    }
+
+    &15 {
+        padding-bottom: 7.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 15px !important;
+        }
+    }
+
+    &20 {
+        padding-bottom: 10px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 20px !important;
+        }
+    }
+
+    &25 {
+        padding-bottom: 12.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 25px !important;
+        }
+    }
+
+    &30 {
+        padding-bottom: 15px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 30px !important;
+        }
+    }
+
+    &35 {
+        padding-bottom: 17.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 35px !important;
+        }
+    }
+
+    &40 {
+        padding-bottom: 20px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 40px !important;
+        }
+    }
+
+    &45 {
+        padding-bottom: 22.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 45px !important;
+        }
+    }
+
+    &50 {
+        padding-bottom: 25px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 50px !important;
+        }
+    }
+
+    &55 {
+        padding-bottom: 27.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 55px !important;
+        }
+    }
+
+    &60 {
+        padding-bottom: 30px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 60px !important;
+        }
+    }
+
+    &65 {
+        padding-bottom: 32.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 65px !important;
+        }
+    }
+
+    &70 {
+        padding-bottom: 35px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 70px !important;
+        }
+    }
+
+    &75 {
+        padding-bottom: 37.5px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 75px !important;
+        }
+    }
+
+    &80 {
+        padding-bottom: 40px !important;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 80px !important;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// Download Guide
+
+.c-guide {
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem-size(960px);
+
+    &__media,
+    &__content {
+      flex: 0 0 50%;
+    }
+
+    &__content {
+      align-self: center;
+      padding-left: $gutter-width / 2;
+
+      > * {
+        max-width: rem-size(440px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center; // fixes safari img stretching bug
+    margin-bottom: rem-size(30px);
+
+    @media (min-width: $breakpoint-md) {
+      margin-top: 0;
+      padding-right: $gutter-width / 2; //rem-size(40px);
+      justify-content: flex-end;
+    }
+  }
+
+  &__note {
+    color: $color-01;
+  }
+
+  .heading-04-alt {
+    margin-bottom: rem-size(15px);
+
+    & + p {
+      margin-bottom: rem-size(25px);
+    }
+  }
+}

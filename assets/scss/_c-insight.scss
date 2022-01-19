@@ -1,0 +1,86 @@
+// Insight
+
+.c-insight {
+
+	.c-content {
+
+		@media (min-width: 768px) and (-ms-high-contrast:none) { // ie-specific style
+			margin-right: 20px;
+		}
+
+		.c-content__content {
+
+			margin-top: 0px;
+			flex: 0 0 70% !important;
+			
+			@media (max-width: $breakpoint-md-down) {
+				
+				margin-bottom:30px;
+				
+				.c-article__media {
+					margin-left: -20px;
+					margin-right: -20px;
+				}
+			}
+			
+			.container {
+				padding:0;
+				margin-bottom:20px;
+			}
+		}
+		
+		.c-content__side {
+			margin-top: 0px;
+			flex: 0 0 28.4% !important;
+			margin-left:auto;
+	  
+			.c-articles__media {
+				margin-bottom:10px !important;
+			}
+	  
+			.c-tags__list {
+				margin-top:0px;
+			}
+		}
+		
+		.c-tags__list {
+			margin-top: rem-size(30px);
+		}
+		
+		&__wide {
+			
+			flex:unset !important;
+			display:block !important;
+			
+			.c-content__content {
+				
+				flex:unset !important;
+				
+				.grid-content-item, .c-tags__list, .c-share {
+					max-width:765px;
+					margin-left:auto;
+					margin-right:auto;
+				}
+				
+				.c-article__media {
+					margin-left:0px;
+					margin-right:0px;
+				}
+			}
+		}
+	}
+	
+	.c-metadata__item {
+		@media (min-width: $breakpoint-md) {
+			font-size: rem-size(16px);
+
+			&:before {
+				width: rem-size(19px);
+				height: rem-size(19px);
+				margin-right: rem-size(6px);
+				background-size: rem-size(19px 19px);
+			}
+		}
+	}
+	
+}

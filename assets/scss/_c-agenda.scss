@@ -1,0 +1,241 @@
+// Agenda
+
+.agenda {
+    @media (min-width: $breakpoint-md) {
+        padding-left: 40px;
+        padding-right: 40px;
+        .heading-07-alt {
+            margin-bottom: 4.0625rem;
+        }
+    }
+}
+
+.c-agenda {
+    position: relative;
+    list-style: none;
+    padding-top: rem-size(20px);
+    padding-left: 0;
+    margin-left: rem-size(25px);
+    margin-bottom: rem-size(50px);
+    font-size: rem-size(14px);
+
+    @media (min-width: $breakpoint-md) {
+        left: 50%;
+        width: 50%;
+        margin-left: 0;
+        padding-left: 0 !important;
+    }
+
+    &__img-heading {
+        margin-bottom: rem-size(20px);
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        padding-bottom: rem-size(30px);
+        padding-left: rem-size(50px);
+        margin-bottom: 0 !important;
+        position: relative;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: rem-size(60px);
+        }
+
+        &:nth-child(even) {
+            @media (min-width: $breakpoint-md) {
+                right: 100%;
+                padding-left: 0;
+                padding-right: rem-size(50px);
+                text-align: right;
+
+                .c-agenda__time {
+                    left: 100%;
+                    right: auto;
+                    padding-left: rem-size(50px);
+                    text-align: left;
+                }
+
+                .c-agenda__link {
+                    left: 100%;
+                    right: auto;
+                    padding-left: rem-size(50px);
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    &__bullet {
+        &:after {
+            content: " ";
+            position: absolute;
+            left: -1px;
+            top: rem-size(2px);
+            border-left: 2px solid #000;
+            height: 100%;
+        }
+
+        &:before {
+            content: " ";
+            position: absolute;
+            width: rem-size(18px);
+            height: rem-size(18px);
+            border-radius: 50%;
+            background: #000;
+            top: rem-size(2px);
+            left: rem-size(-9px);
+        }
+
+        & + .c-agenda__heading {
+            margin-top: 0 !important;
+        }
+    }
+
+    &__time {
+        position: relative;
+        font-weight: bold;
+        font-size: rem-size(26px);
+        top: rem-size(-9px);
+        font-family: $font-alt;
+        margin-bottom: 0;
+
+        @media (min-width: $breakpoint-md) {
+            position: absolute;
+            right: 100%;
+            width: 100%;
+            text-align: right;
+            padding-right: rem-size(50px);
+            top: rem-size(-9px);
+        }
+
+        sup {
+            font-size: 0.75rem;
+            vertical-align: super;
+            top: 0;
+        }
+
+        & + .c-agenda__heading {
+            margin-top: 0 !important;
+        }
+    }
+
+    &__link {
+        position: relative;
+        margin-bottom: 0;
+
+        a {
+            display: inline-block !important;
+            text-decoration: none !important;
+            font-size: rem-size(18px) !important;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            position: absolute;
+            right: 100%;
+            width: 100%;
+            text-align: right;
+            padding-right: rem-size(50px);
+            top: rem-size(-20px);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        display: block;
+        width: rem-size(60px);
+        height: rem-size(60px);
+        left: rem-size(-28px);
+        top: rem-size(-20px);
+
+        & + .c-agenda__heading {
+            margin-top: 0 !important;
+        }
+    }
+
+    &__heading {
+        margin-top: rem-size(30px);
+        margin-bottom: rem-size(12px);
+        font-size: rem-size(16px) !important;
+    }
+
+    &__speaker {
+        font-size: rem-size(12px);
+        font-weight: bold;
+        margin-top: rem-size(17px);
+    }
+
+    a {
+        font-size: rem-size(12px);
+        margin-top: rem-size(12px);
+        text-decoration: underline;
+        color: $color-unily-black;
+        background-image: none !important;
+        display: block;
+    }
+
+    &__item:nth-child(even) {
+        .c-agenda__time {
+            @media (min-width: $breakpoint-md) {
+                left: 100%;
+                right: auto;
+                padding-left: rem-size(50px);
+                text-align: left;
+            }
+        }
+
+        .c-agenda__link {
+            @media (min-width: $breakpoint-md) {
+                left: 100%;
+                right: auto;
+                padding-left: rem-size(50px);
+                text-align: left;
+            }
+        }
+
+        .c-agenda__image {
+            @media (min-width: $breakpoint-md) {
+                left: auto;
+                right: rem-size(-32px);
+            }
+        }
+
+        @media (min-width: $breakpoint-md) {
+            .c-agenda__bullet {
+                &:after {
+                    left: auto;
+                    right: rem-size(-1px);
+                }
+
+                &:before {
+                    left: auto;
+                    right: rem-size(-9px);
+                }
+            }
+        }
+    }
+
+    &__item {
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item:last-child {
+        .c-agenda__bullet:after {
+            display: none;
+        }
+    }
+}
+
+.c-article .c-agenda {
+    @media (min-width: $breakpoint-md) {
+        margin-top: rem-size(40px);
+    }
+}

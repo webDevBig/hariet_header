@@ -1,0 +1,138 @@
+// Video
+
+.c-block-video {
+  color: $color-white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 50px);
+  height: auto;
+  overflow: hidden;
+  font-size: rem-size(20px);
+
+  &:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    padding-bottom: 150%; // 1920x840 16x7 aspect ratio
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: rem-size(22px);
+    max-height: 100vh;
+
+    &:before {
+      padding-bottom: 43.75%; //39%; // 1920x840 16x7 aspect ratio
+    }
+  }
+  
+  @media (max-width: $breakpoint-md-down) {
+    height: 60vh;
+    max-height: 60vh;
+  }
+
+  &__container {
+    z-index: 100;
+    text-align: center;
+    max-width: rem-size(438px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: rem-size(80px);
+    padding-bottom: rem-size(80px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__video {
+    font: 0/0 a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: radial-gradient(rgba(0,0,0,.3) 25%,rgba(0,0,0,0) 80%);
+    }
+  }
+
+  video {
+    object-fit: cover;
+    object-position: 50% 50%; 
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__source--desktop {
+    display: none; 
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+
+  &__source--mobile {
+    @media (min-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    font: 0/0 a;
+    margin-bottom: rem-size(20px);
+  }
+
+  &__media {
+    font: 0/0 a;
+    align-self: stretch;
+    width: 100%;
+
+    &:after {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: rgba($color-unily-black,0.5);
+    }
+  }
+
+  p {
+    margin-bottom: rem-size(25px);
+  }
+
+  &__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: rem-size(40px);
+    padding-left: rem-size(20px);
+    padding-right: rem-size(20px);
+
+    a {
+      color: inherit;
+    }
+  }
+}

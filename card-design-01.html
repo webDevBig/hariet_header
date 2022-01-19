@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <title>Home - Unily</title>
+        
+        <meta name="description" content="">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+        <style>
+			/* 
+				Inline styles TBC by Chris 
+				- Logos and arrow animation in top section form
+			*/
+			
+            .logos-row-wrapper {
+                padding: 50px 0 50px 0;
+            }
+            .logos-row {
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+            .logos-row.logos-row-6 img {
+                width: 65px;
+                height: 32px;
+                object-fit: contain;
+                margin: 0 10px 20px 0;
+            }
+            .link-animated-arrow {
+                font-weight: 300;
+                line-height: 1.4;
+                transition: color 200ms;
+                display: flex;
+                align-items: center;
+            }
+            .link-animated-arrow:hover {
+                text-decoration: none;
+            }
+            .link-animated-arrow svg {
+                fill: #3EC8ED;
+                padding-top: 1px;
+                transition: fill 200ms, transform 200ms;
+                width: 16px;
+                height: 16px;
+                margin-left: 8px;
+            }
+            .link-animated-arrow:hover svg {
+                transform: translateX(4px);
+            }
+            @media (max-width: 767px) {
+                .logos-row {
+                    justify-content: center;
+                }
+                .logos-row.logos-row-6 img {
+                    margin: 0 8px 20px 8px;
+                }
+            }
+        </style>
+        
+        <link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/vendor/magnific-popup-1.1.0.css" rel="stylesheet">
+        <link href="assets/css/cards.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div class="c-loading">
+            <div class="c-loading__wrap">
+                <div class="c-loading__icon">
+                    <span class="c-loading__animation"></span>
+                </div>
+            </div>
+        </div>
+        <header class="c-head">
+            
+            <div class="c-head__wrap">
+                
+                <div class="c-head__container">
+                    
+                    <div class="c-logo">
+                        <a href="#">
+                            <img src="assets/media/unily-intranet-solutions-logo.svg" alt="Unily" class="c-logo__img">
+                            <img src="assets/media/unily-intranet-solutions-logo-dark.svg" alt="Unily" class="c-logo__img c-logo__img--alt">
+                        </a>
+                    </div>
+                    
+                    <a href="#" class="c-head__nav-link js-nav-toggle">
+                        Navigation
+                    </a>
+                
+                </div>
+                
+                <nav class="c-head__navigation">
+                    
+                    <div class="c-search">
+                        
+                        <div class="c-search__container">
+                            
+                            <div class="c-search__form">
+                                <label for="search-field" class="c-search__label">Search</label>
+                                <input type="text" id="search-field" class="c-search__field" placeholder="Start searching…">
+                                <input type="submit" value="Search" class="c-search__btn">
+                            </div>
+                            
+                            <a href="#" class="c-search__close js-search-close">Close search</a>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <ul class="c-nav">
+                        <li class="c-nav__item">
+                            <a href="link.html" class="c-nav__link c-nav__link--subnav js-subnav-link js-dropdown-link" data-link="solutions">
+                                <span class="c-nav__text">Solutions</span>
+                            </a>
+                            
+                            <div class="c-nav__subnav">
+                                
+                                <a href="#" class="c-subnav__back js-subnav-back">Back</a>
+                                <a class="c-subnav__heading">Solutions</a>
+                                
+                                <ul class="c-subnav c-subnav--subnav">
+                                    <li class="c-subnav__item">
+                                        <a href="#" class="c-subnav__link">Use cases</a>
+                                        
+                                        <ul class="c-subnav">
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal communications</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Knowledge management</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Culture &amp; engagement</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Networked enterprise</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Productivity &amp; collaboration</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Frontline workers</a></li>
+                                        </ul>
+                                    
+                                    </li>
+                                    <li class="c-subnav__item">
+                                        <a href="#" class="c-subnav__link">Industries</a>
+                                        
+                                        <ul class="c-subnav">
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Energy</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Healthcare</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Professional services</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Retail</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Travel and Transport</a></li>
+                                            <li class="c-subnav__item c-subnav__item--more">
+                                                <a href="#" class="c-subnav__link c-subnav__link--more js-subnav-more">More</a>
+                                                
+                                                <ul class="c-subnav">
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Employee Experience Platform</a></li>
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Digital Workplace</a></li>
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal Communication System</a></li>
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Employee Engagement Software</a></li>
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Managing Remote Employees</a></li>
+                                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Future of Work Technology</a></li>
+                                                </ul>
+                                            
+                                            </li>
+                                        </ul>
+                                    
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                        
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link c-nav__link--subnav js-subnav-link js-dropdown-link" data-link="features">
+                                <span class="c-nav__text">Features</span>
+                            </a>
+                            
+                            <div class="c-nav__subnav">
+                                
+                                <a href="#" class="c-subnav__back js-subnav-back">Back</a>
+                                <a href="#" class="c-subnav__heading">Features</a>
+                                
+                                <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Communications</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Publishing</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Search</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Social</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Sites</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Analytics</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Mobile</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Integrations</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Platform</a></li>
+                                </ul>
+                            
+                            </div>
+                        
+                        </li>
+                        <li class="c-nav__item">
+                            <a href="#" class="c-nav__link c-nav__link--subnav js-subnav-link js-dropdown-link" data-link="about">
+                                <span class="c-nav__text">About</span>
+                            </a>
+                            
+                            <div class="c-nav__subnav">
+                                
+                                <a href="#" class="c-subnav__back js-subnav-back">Back</a>
+                                <a href="#" class="c-subnav__heading">About</a>
+                                
+                                <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">About Us</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Customer Success</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Partner</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Contact Us</a></li>
+                                </ul>
+                            
+                            </div>
+                        
+                        </li>
+                        <li class="c-nav__item js-nav-link"><a href="#" class="c-nav__link"><span class="c-nav__text">Clients</span></a></li>
+                        <li class="c-nav__item js-nav-link"><a href="#" class="c-nav__link"><span class="c-nav__text">Pricing</span></a></li>
+                        <li class="c-nav__item">
+                            <a href="insights.html" class="c-nav__link c-nav__link--subnav js-subnav-link js-dropdown-link" data-link="insights">
+                                <span class="c-nav__text">Insights</span>
+                            </a>
+                            
+                            <div class="c-nav__subnav">
+                                
+                                <a href="#" class="c-subnav__back js-subnav-back">Back</a>
+                                <a href="#" class="c-subnav__heading">Insights</a>
+                                
+                                <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Blogs</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Guides</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Case Studies</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Events</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Webinars</a></li>
+                                </ul>
+                                
+                                <span class="c-subnav__heading">Deep Dive</span>
+                                
+                                <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Digital Workplace</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Intranet Software</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal Communications</a></li>
+                                    <li class="c-subnav__item c-subnav__item--more">
+                                        <a href="#" class="c-subnav__link c-subnav__link--more js-subnav-more">More</a>
+                                        
+                                        <ul class="c-subnav">
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Employee Experience Platform</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Digital Workplace</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal Communication System</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Employee Engagement Software</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Managing Remote Employees</a></li>
+                                            <li class="c-subnav__item"><a href="#" class="c-subnav__link">Future of Work Technology</a></li>
+                                        </ul>
+                                    
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                        
+                        </li>
+                        <li class="c-nav__item c-nav__item--search">
+                            <a href="#" class="c-nav__link--search js-link-search">
+                                Search
+                            </a>
+                        </li>
+                        <li class="c-nav__item c-nav__item--btn"><a href="#" class="c-nav__btn">Get Started</a></li>
+                    </ul>
+                
+                </nav>
+            
+            </div>
+            
+            <div class="c-dropdown">
+                
+                <div class="c-dropdown__wrap c-dropdown__wrap--solutions" data-dropdown="solutions">
+                    
+                    <div class="c-dropdown__container">
+                        
+                        <div class="c-dropdown__row">
+                            <div class="c-dropdown__col c-dropdown__col--solutions">
+                                
+                                <div class="c-dropdown__heading">Use cases</div>
+                                
+                                <ul class="c-dropdown__nav c-dropdown__nav--solutions">
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--10"></span>
+                                            <span class="c-dropdown__title">Internal communications</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--11"></span>
+                                            <span class="c-dropdown__title">Knowledge management</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--12"></span>
+                                            <span class="c-dropdown__title">Culture &amp; engagement</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--13"></span>
+                                            <span class="c-dropdown__title">Networked enterprise</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--14"></span>
+                                            <span class="c-dropdown__title">Productivity &amp; collaboration</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor efficitur dolor et bibendum vehicul ipsum dolor efficitur dolor </span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--15"></span>
+                                            <span class="c-dropdown__title">Frontline workers</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor efficitur dolor et bibendum vehicul ipsum dolor efficitur dolor e</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                            
+                            <div class="c-dropdown__col c-dropdown__col--industries">
+                                
+                                <div class="c-dropdown__box bg-01">
+                                    
+                                    <div class="c-dropdown__heading">Industries</div>
+                                    
+                                    <ul class="c-subnav">
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Energy</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Healthcare</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Professional Services</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Retail</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Travel and Transport</a></li>
+                                    </ul>
+                                    
+                                    <div class="c-more">
+                                        
+                                        <div class="c-more__heading js-link-more">More</div>
+                                        
+                                        <div class="c-more__container">
+                                            <ul class="c-more__list">
+                                                <li><a href="#">Employee Experience Platform</a></li>
+                                                <li><a href="#">Digital Workplace</a></li>
+                                                <li><a href="#">Internal Communication System</a></li>
+                                                <li><a href="#">Employee Engagement Software</a></li>
+                                                <li><a href="#">Managing Remote Employees</a></li>
+                                                <li><a href="#">Future of Work Technology</a></li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                                
+                                <!--<div class="c-dropdown__box bg-01">
+                                  <h2 class="c-dropdown__heading">Functions</h2>
+                                  <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal Communications</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Human Resources</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Information Technology</a></li>
+                                  </ul>
+                                </div>-->
+                            
+                            </div>
+                        
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="c-dropdown__wrap c-dropdown__wrap--features" data-dropdown="features">
+                    
+                    <div class="c-dropdown__container">
+                        
+                        <div class="c-dropdown__row">
+                            <div class="c-dropdown__col c-dropdown__col--features">
+                                
+                                <ul class="c-dropdown__nav c-dropdown__nav--features">
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--01"></span>
+                                            <span class="c-dropdown__title">Communications</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--02"></span>
+                                            <span class="c-dropdown__title">Publishing</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--03"></span>
+                                            <span class="c-dropdown__title">Search</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--04"></span>
+                                            <span class="c-dropdown__title">Social</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--05"></span>
+                                            <span class="c-dropdown__title">Sites</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--06"></span>
+                                            <span class="c-dropdown__title">Analytics</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--07"></span>
+                                            <span class="c-dropdown__title">Mobile</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor  efficitur dolor et bibendum vehicul ipsum dolor efficitur dolor e</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--08"></span>
+                                            <span class="c-dropdown__title">Integrations</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor  efficitur dolor et bibendum vehicul ipsum dolor efficitur dolor e</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--09"></span>
+                                            <span class="c-dropdown__title">Platform</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor efficitur dolor et bibendum vehicul ipsum dolor efficitur dolor e</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                            
+                            <!--<div class="c-dropdown__col c-dropdown__col--subscribe">
+                              <div class="c-subscribe">
+                                <h2 class="c-subscribe__heading"><strong>Get started.</strong> Get your free demo now.</h2>
+                                <div class="c-subscribe__form">
+                                  <input type="text" class="form-field c-subscribe__field" placeholder="Email*">
+                                  <button class="c-subscribe__btn">Get started</button>
+                                </div>
+                              </div>
+                            </div>-->
+                        
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="c-dropdown__wrap c-dropdown__wrap--about" data-dropdown="about">
+                    
+                    <div class="c-dropdown__container">
+                        
+                        <div class="c-dropdown__row c-dropdown__row--about">
+                            <div class="c-dropdown__col">
+                                
+                                <ul class="c-dropdown__nav c-dropdown__nav--about">
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--21"></span>
+                                            <span class="c-dropdown__title">About Us</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--17"></span>
+                                            <span class="c-dropdown__title">Customer Success</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--18"></span>
+                                            <span class="c-dropdown__title">Partner</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-dropdown__item">
+                                        <a href="#" class="c-dropdown__link">
+                                            <span class="c-dropdown__icon c-dropdown__icon--20"></span>
+                                            <span class="c-dropdown__title">Contact Us</span>
+                                            <span class="c-dropdown__desc">Lorem ipsum dolor</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                        
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="c-dropdown__wrap c-dropdown__wrap--insights" data-dropdown="insights">
+                    
+                    <div class="c-dropdown__container">
+                        <div class="c-dropdown__row">
+                            
+                            <div class="c-dropdown__col">
+                                
+                                <div class="c-dropdown__box bg-01">
+                                    
+                                    <div class="c-dropdown__heading">Insights</div>
+                                    
+                                    <ul class="c-subnav">
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Blogs</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Guides</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Case Studies</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Events</a></li>
+                                        <li class="c-subnav__item"><a href="#" class="c-subnav__link">Webinars</a></li>
+                                    </ul>
+                                
+                                </div>
+                                
+                                <!--<div class="c-more">
+                                  <h2 class="c-more__heading js-link-more">More</h2>
+                                  <div class="c-more__container">
+                                    <ul class="c-more__list">
+                                      <li><a href="#">Employee Experience Platform</a></li>
+                                      <li><a href="#">Digital Workplace</a></li>
+                                      <li><a href="#">Internal Communication System</a></li>
+                                      <li><a href="#">Employee Engagement Software</a></li>
+                                      <li><a href="#">Managing Remote Employees</a></li>
+                                      <li><a href="#">Future of Work Technology</a></li>
+                                    </ul>
+                                  </div>
+                                </div>-->
+                            
+                            </div>
+                            
+                            <div class="c-dropdown__col">
+                                
+                                <h2 class="c-dropdown__heading">Featured insights</h2>
+                                
+                                <ul class="c-articles c-articles--dropdown">
+                                    <li class="c-articles__item">
+                                        <div class="c-articles__content">
+                                            <span class="tag tag-02">Blogs</span>
+                                            <p class="post-title"><a href="#">Why keeping furloughed employees engaged is critical for the future of your business</a></p>
+                                            <ul class="c-tags__list">
+                                                <li><a href="#" class="tag tag-01">#Search</a></li>
+                                                <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                                <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="c-articles__item">
+                                        <div class="c-articles__content">
+                                            <span class="tag tag-02">Blogs</span>
+                                            <p class="post-title"><a href="#">How to fuel a positive culture for remote workers</a></p>
+                                            <ul class="c-tags__list">
+                                                <li><a href="#" class="tag tag-01">#Search</a></li>
+                                                <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                                <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                                <li><a href="#" class="tag tag-01">#Lorem ipsum</a></li>
+                                                <li><a href="#" class="tag tag-01">#Dolor</a></li>
+                                                <li><a href="#" class="tag tag-01">#Sit amet</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="c-articles__item">
+                                        <div class="c-articles__content">
+                                            <span class="tag tag-02">Blogs</span>
+                                            <p class="post-title"><a href="#">Why keeping furloughed employees engaged is critical for the future of your business</a></p>
+                                            <ul class="c-tags__list">
+                                                <li><a href="#" class="tag tag-01">#Search</a></li>
+                                                <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                                <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                            
+                            <!--<div class="c-dropdown__col c-dropdown__col--subscribe">
+                              <div class="c-subscribe c-subscribe--dropdown">
+                                <h2 class="c-subscribe__heading"><strong>Subscribe.</strong> Insights to your inbox.</h2>
+                                <p>One line of description text.</p>
+                                <div class="c-subscribe__form">
+                                  <input type="text" class="form-field c-subscribe__field" placeholder="Email*">
+                                  <button class="c-subscribe__btn">Subscribe</button>
+                                </div>
+                              </div>
+                            </div>-->
+                            
+                            <div class="c-dropdown__col">
+                                
+                                <div class="c-dropdown__heading">Deep dive</div>
+                                
+                                <ul class="c-subnav">
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Digital workplace</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Intranet software</a></li>
+                                    <li class="c-subnav__item"><a href="#" class="c-subnav__link">Internal communications</a></li>
+                                </ul>
+                                
+                                <div class="c-more">
+                                    
+                                    <div class="c-more__heading js-link-more">More</div>
+                                    
+                                    <div class="c-more__container">
+                                        <ul class="c-more__list">
+                                            <li><a href="#">Employee Experience Platform</a></li>
+                                            <li><a href="#">Digital Workplace</a></li>
+                                            <li><a href="#">Internal Communication System</a></li>
+                                            <li><a href="#">Employee Engagement Software</a></li>
+                                            <li><a href="#">Managing Remote Employees</a></li>
+                                            <li><a href="#">Future of Work Technology</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </header>
+        <div class="c-page">
+            <section class="c-block-home__wrap">
+                <div class="container container-lg pt-sm">
+                    
+                    <div class="c-block-home">
+                        
+                        <div class="c-block-home__content">
+                            
+                            <div class="c-block-home__item">
+                                
+                                <div>
+                                    
+                                    <h1 class="c-block-home__heading"><strong>UNILY.</strong> Unite your enterprise.</h1>
+                                    <p class="paragraph-02 ">Unily is the employee experience platform at the heart of your digital workplace that powers better work for everyone. Get your free demo now.</p>
+                                    
+                                    <!-- START - dynamic form (skeleton) markup copied from Unily.com -->
+                                    <div class="c-form--subscribe">
+                                        <form action="" method="POST" class="hs-form">
+                                            <div class="hs_email hs-email hs-fieldtype-text field hs-form-field">
+                                                <label placeholder="Enter your Email" for="email">
+                                                    <span>Email</span><span class="hs-form-required">*</span>
+                                                </label>
+                                                <div class="input">
+                                                    <input class="hs-input" id="email" type="email" name="email" required="" placeholder="Email" value="" autocomplete="email">
+                                                </div>
+                                            </div>
+                                            <div class="legal-consent-container">
+                                                <div class="hs-richtext">
+                                                    <p>You can unsubscribe at any time. Read our <a href="https://www.unily.com/privacy-policy">Privacy Policy</a>.</p>
+                                                </div>
+                                            </div>
+                                            <div class="hs_submit hs-submit">
+                                                <div class="actions">
+                                                    <input type="submit" value="Get Started" class="hs-button primary large">
+                                                </div>
+                                            </div>
+                                            <div class="logos-row-wrapper">
+                                                <h6 class="mb-2">Recognised by</h6>
+                                                <div class="logos-row logos-row-6">
+                                                    <img src="assets/media/microsoft.svg" alt="" />
+                                                    <img src="assets/media/forrester.svg" alt="" />
+                                                    <img src="assets/media/nielsen-norman.svg" alt="" />
+                                                    <img src="assets/media/gartner.svg" alt="" />
+                                                    <img src="assets/media/451.svg" alt="" />
+                                                    <img src="assets/media/ragan.svg" alt="" />
+                                                    <img src="assets/media/ee-award.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link-animated-arrow mb-3">Learn more <svg viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg" class="_8v6j"><path d="M10.0429 0.542893C10.4334 0.152369 11.0666 0.152369 11.4571 0.542893L17.7071 6.79289C18.0976 7.18342 18.0976 7.81658 17.7071 8.20711L11.4571 14.4571C11.0666 14.8476 10.4334 14.8476 10.0429 14.4571C9.65237 14.0666 9.65237 13.4334 10.0429 13.0429L14.5858 8.5H1C0.447715 8.5 0 8.05228 0 7.5C0 6.94772 0.447715 6.5 1 6.5H14.5858L10.0429 1.95711C9.65237 1.56658 9.65237 0.933417 10.0429 0.542893Z"></path></svg></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- END - dynamic form (skeleton) markup copied from Unily.com -->
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="c-block-home__media">
+                            <div class="c-block-home__slidein">
+                                <img src="assets/media/home-placeholder.png" class="c-block-home__img" alt="">
+                                <a href="https://player.vimeo.com/video/482722821" class="link-play" id="popupVideo1"><img src="https://unilyweb2020dev.azureedge.net/media/bwkoyffj/play-black.svg" alt="" />Learn more about Unily</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            </section>
+            <section class="c-block-01__wrap">
+                <div class="container">
+                    
+                    <div class="c-block-01">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/search_v2.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="c-block-01 c-block-01--alt">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/internal-communications_v2.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="c-block-01">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/social.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="c-block-01 c-block-01--alt">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/integrations.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="c-block-01">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/frontline-workers.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="c-block-01 c-block-01--alt">
+                        
+                        <div class="c-block-01__content">
+                            
+                            <h2 class="heading-01-alt"><strong>Lorem ipsum dolor sit amet</strong></h2>
+                            
+                            <p class="paragraph-02">Empower and transform your whole business with features like news, social and enterprise search.</p>
+                            
+                            <p><a href="#" class="btn btn-02">Social</a></p>
+                        
+                        </div>
+                        
+                        <div class="c-block-01__media">
+                            
+                            <img src="assets/media/networked-enterprise.png" class="img img-shadow" alt="">
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            </section>
+            <section class="container py">
+                
+                <h2 class="heading-01-alt text-center"><strong>Clients.</strong> Loved by the world's biggest brands.</h2>
+                
+                <ul class="c-clients c-clients--5">
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/mcdonalds.svg" height="60" alt="McDonald's" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/hershey.svg" height="40" alt="Hershey" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/loreal.svg" height="32" alt="L'Oréal" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/stantec.svg" height="46" alt="Stantec" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/estee-lauder-companies.svg" height="64" alt="Estée Lauder Companies" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/shell.svg" height="70" alt="Shell" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/baker-hughes.svg" height="38" alt="Baker Hughes" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/adecco.svg" height="34" alt="Adecco" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/canon.svg" height="30" alt="Canon" class="img-alt">
+                        </a>
+                    </li>
+                    <li class="c-clients__item">
+                        <a href="#" class="c-clients__link">
+                            <img src="assets/media/cardinal.svg" height="58" alt="CardinalHealth" class="img-alt">
+                        </a>
+                    </li>
+                </ul>
+            
+            </section>
+            <section class="c-block-client c-block-client--video">
+                
+                <div class="c-block-client__video">
+                    <video preload="auto" autoplay="" muted="" loop="" playsinline="" poster="assets/media/clients/stantec/stantec-poster.jpg">
+                        <source src="assets/media/clients/stantec/unily-stantec-case-study.webm" type="video/webm">
+                        <source src="assets/media/clients/stantec/unily-stantec-case-study.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="container py c-block-client__container">
+                    
+                    <p class="c-block-client__logo">
+                        <img src="assets/media/logo-stantec.svg" alt="Stantec" class="img" width="230" height="61">
+                    </p>
+                    
+                    <p>Empower and transform your whole business with features like news, social and enterprise search.</p>
+                    
+                    <p><a href="#" class="btn btn-03">Learn more</a></p>
+                
+                </div>
+                
+                <a href="#" class="c-block-client__nav c-block-client__nav--prev">Previous</a>
+                <a href="#" class="c-block-client__nav c-block-client__nav--next">Next</a>
+                
+                <ul class="c-block-client__bullets">
+                    <li><a href="#" class="c-block-client_bullets--slide active">1</a></li>
+                    <li><a href="#" class="c-block-client_bullets--slide">2</a></li>
+                    <li><a href="#" class="c-block-client_bullets--slide">3s</a></li>
+                </ul>
+            
+            </section>
+            <section class="grid-content-item">
+				<section class="d-cards pt pb">
+					<div class="c-block-05">
+						<div class="c-block-05__row">
+							<div class="c-block-05__col d-cards-list">
+								<div class="c-block-05__content">
+									<div class="d-single-card d-single-card--content-white d-single-card--bg-img" style="background-image: url('assets/img/img-cdn/gettyimages-1223873505-min.png')">
+										<div class="d-card-tag card-tag">
+											<span href="#" class="tag tag-09">NEW</span>
+										</div>
+										<div class="d-single-card-content">
+											<h2 class="d-card-heading">Install new features in seconds with the Feature Store.</h2>
+										</div>
+										<div class="d-card-bottom">
+											<a href="#" class="d-card-button">LEARN MORE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c-block-05__col d-cards-list">
+								<div class="c-block-05__content">
+									<div class="d-single-card" style="background-color: #F5F5F5;">
+										<div class="d-single-card-content">
+											<h2 class="d-card-heading">More than software with Unily services.</h2>
+											<div class="d-card-img-1">
+												<img src="assets/img/img-cdn/9f703fc3e04d52a3dc00e2f6c9d74f7b5212ac5c-min.png" alt="" width="323" />
+											</div>
+										</div>
+										<div class="d-card-bottom">
+											<a href="#" class="d-card-button">LEARN MORE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-block-05__row">
+							<div class="c-block-05__col d-cards-list">
+								<div class="c-block-05__content">
+									<div class="d-single-card d-single-card--content-white" style="background-color: #112A3F;">
+										<div class="d-single-card-content">
+											<h2 class="d-card-heading">The #1 employee experience platform for enterprises.</h2>
+											<div class="d-card-logos">
+												<img src="assets/img/img-cdn/logo1.svg" alt="" height="30"/>
+												<img src="assets/img/img-cdn/logo2.svg" alt="" height="30"/>
+												<img src="assets/img/img-cdn/logo3.svg" alt="" height="40"/>
+												<img src="assets/img/img-cdn/logo4.svg" alt="" height="40"/>
+												<img src="assets/img/img-cdn/logo5.svg" alt="" height="24"/>
+											</div>
+										</div>
+										<div class="d-card-bottom">
+											<a href="#" class="d-card-button">LEARN MORE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c-block-05__col d-cards-list">
+								<div class="c-block-05__content">
+									<div class="d-single-card d-single-card--content-white d-single-card--bg-img" style="background-image: url('assets/img/img-cdn/gettyimages-1223873505-min.png')">
+										<div class="d-card-tag">
+											<svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" class="display-after-font tag-svg-white" >
+												<defs>
+													<mask id="mask" x="0" y="0">
+														<rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+														<text text-anchor="middle" dominant-baseline="middle" x="50%" y="55%" dy="0.5" font-family="'Roboto Condensed">TESTING REALLY LONG</text>
+													</mask>
+												</defs>
+												<rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill-opacity="1" style="fill: #fff;"></rect>
+											</svg>
+											<span class="tag tag-02 svg-transparent-tag-placeholder">TESTING REALLY LONG</span>
+										</div>
+										<div class="d-single-card-content">
+											<h2 class="d-card-heading">Get the most from Microsoft 365 and Google Workspace with Unily.</h2>
+										</div>
+										<div class="d-card-bottom">
+											<a href="#" class="d-card-button">LEARN MORE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+            </section>
+            <section class="bg-06 c-block-subscribe">
+                
+                <div class="container py">
+                    
+                    <h1 class="heading-01-alt text-center c-block-subscribe__heading"><strong>GET STARTED.</strong> Get your free demo now.</h1>
+                    
+                    <div class="c-subscribe">
+                        
+                        <div class="c-subscribe__form">
+                            <input type="text" class="form-field c-subscribe__field" placeholder="Email*">
+                            <button class="c-subscribe__btn">Get Started</button>
+                        </div>
+                        
+                        <p>Unily uses your information to contact you about our products and services. You may unsubscribe from these communications at anytime. <a href="#">Privacy Policy</a>.</p>
+                    
+                    </div>
+                
+                </div>
+            
+            </section>
+            
+            
+            <section>
+                
+                <div class="container container-full pt">
+                    
+                    <h2 class="heading-06">Latest insights</h2>
+                
+                </div>
+                
+                <div data-where-next
+				class="c-articles__wrap">
+                    
+                    <ul class="c-articles c-articles--carousel">
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Events</span>
+                                <p class="post-title"><a href="#">Supercharge employee experience with an intranet - Frankfurt</a></p>
+                                <p class="c-metadata__item c-metadata__item--date">Dec 04, 2020</p>
+                            </div>
+                        </li>
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Blogs</span>
+                                <p class="post-title"><a href="#">How to fuel a positive culture for remote workers</a></p>
+                                <ul class="c-tags__list">
+                                    <li><a href="#" class="tag tag-01">#Search</a></li>
+                                    <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                    <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                    <li><a href="#" class="tag tag-01">#Lorem ipsum</a></li>
+                                    <li><a href="#" class="tag tag-01">#Dolor</a></li>
+                                    <li><a href="#" class="tag tag-01">#Sit amet</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Guides</span>
+                                <p class="post-title"><a href="#">7 must ask pulse survey questions to transform employee engagement</a></p>
+                            </div>
+                        </li>
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Blogs</span>
+                                <p class="post-title"><a href="#">How to fuel a positive culture for remote workers</a></p>
+                                <ul class="c-tags__list">
+                                    <li><a href="#" class="tag tag-01">#Search</a></li>
+                                    <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                    <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                    <li><a href="#" class="tag tag-01">#Lorem ipsum</a></li>
+                                    <li><a href="#" class="tag tag-01">#Dolor</a></li>
+                                    <li><a href="#" class="tag tag-01">#Sit amet</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Guides</span>
+                                <p class="post-title"><a href="#">7 must ask pulse survey questions to transform employee engagement</a></p>
+                            </div>
+                        </li>
+                        <li class="c-articles__item">
+                            <p class="c-articles__media">
+                                <img src="assets/media/insights-thumbnail.jpg" class="img-full" alt="">
+                            </p>
+                            <div class="c-articles__content">
+                                <span class="tag tag-02">Blogs</span>
+                                <p class="post-title"><a href="#">How to fuel a positive culture for remote workers</a></p>
+                                <ul class="c-tags__list">
+                                    <li><a href="#" class="tag tag-01">#Search</a></li>
+                                    <li><a href="#" class="tag tag-01">#Digital workplace</a></li>
+                                    <li><a href="#" class="tag tag-01">#Intranet</a></li>
+                                    <li><a href="#" class="tag tag-01">#Lorem ipsum</a></li>
+                                    <li><a href="#" class="tag tag-01">#Dolor</a></li>
+                                    <li><a href="#" class="tag tag-01">#Sit amet</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                
+                </div>
+            
+            </section>
+        
+        
+        </div>
+        
+        <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/navigation.js"></script>
+        <script src="assets/js/vendor/simplebar.min.js"></script>
+		<script src="assets/js/vendor/magnific-popup-1.1.0.min.js"></script>
+        <script src="assets/js/app.js"></script>
+		<script src="assets/js/videopopup.js"></script>
+		<script src="assets/js/knockouttag.js"></script>
+		<script src="assets/js/wherenext.js"></script>
+		<script type="text/javascript">
+			unilyVideoPopup.init($('#popupVideo1'));
+			unilyWhereNext.init($('[data-where-next]'));
+		</script>
+    
+    </body>
+</html>

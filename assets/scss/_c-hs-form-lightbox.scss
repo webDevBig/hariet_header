@@ -1,0 +1,79 @@
+// Lightbox
+
+.c-lightbox {
+
+    visibility: hidden;
+    opacity: 0;
+    height:0;
+    overflow: auto;
+    display: block;
+    background: rgba($color-unily-black,0.8);
+    z-index: 9999;
+
+    &.opened {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        height:inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .c-lightbox__content {
+        background: $color-white;
+        border-radius: rem-size(4px);
+        max-width: rem-size(520px);
+        width: 100%;
+        padding: rem-size(40px);
+        color: $color-unily-black;
+        position: relative;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+        text-align: left;
+        margin: auto 0;
+
+        p {
+            margin-left: unset !important;
+            margin-right: unset !important;
+            max-width: none !important;
+            font-size: rem-size(16px) !important;
+
+            @media (max-width: $breakpoint-md-down) {
+                font-size: rem-size(16px) !important;
+            }
+        }
+    }
+
+    &__container {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: rem-size(20px);
+
+        @media (min-width: $breakpoint-md) {
+            padding: rem-size(40px);
+        }
+    }
+}
+
+.close-popup {
+    color: #1C1C1B;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    background:none !important;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(#{$cdn-url}media/uuzbwrlw/close-black.svg) no-repeat center;
+        background-size: 0.75rem;
+        position: relative;
+    }
+}

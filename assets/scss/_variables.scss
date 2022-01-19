@@ -1,0 +1,83 @@
+// Variables
+
+
+// Paths
+$cdn-url: '';
+@if variable-exists(cdn-url-override)
+{
+    $cdn-url: $cdn-url-override;
+}
+@else
+{
+    $cdn-url: 'https://unilyweb2020dev.azureedge.net/';
+}
+
+//$fonts-path:  '../fonts/'; // #{$fonts-path}
+
+
+// Fonts
+
+$font:        Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-alt:    'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// Font sizes (for rem-px function)
+
+$rem-size-base: 16px;
+
+
+// Colors
+
+$color-white: #fff;
+
+// Colours from the Style Guide
+$color-unily-light-blue: #3EC8ED;
+$color-unily-green: #3FC3A3;
+$color-unily-yellow: #FCDA0E;
+$color-unily-orange: #FF8A00;
+$color-unily-pink: #FF2896;
+$color-unily-purple: #B479FF;
+$color-unily-dark-blue: #112A3F;
+$color-unily-mid-blue: #3A90A8;
+$color-unily-black: #1C1C1B;
+$color-unily-white: #FFFFFF;
+$color-unily-grey-4: #777777;
+$color-unily-grey-3: #C7C7C7;
+$color-unily-grey-1: #F5F5F5;
+
+// Other Colors
+$color-01: #666;
+$color-02: #DCDCDC;
+$color-03: #1B3449; //search navbar bg 
+$color-04: #333333;
+$color-05: #ff0000;
+$color-06: #C8c8c8;
+$color-07: #999999;
+$color-08: #b4b4b4;
+
+// Grid Gutter
+
+$gutter-width: 40px;
+$gutter-width-sm: 20px;
+
+// Media Queries
+
+$breakpoint-head: 1000px;
+$breakpoint-head-down: 999px;
+
+$breakpoint-head-sm: 500px;
+$breakpoint-head-sm-down: 499px;
+
+$breakpoint-xs: 375px;
+$breakpoint-xs-down: 374px;
+
+$breakpoint-sm: 568px;
+$breakpoint-sm-down: 567px;
+
+$breakpoint-md: 768px;
+$breakpoint-md-down: 767px;
+
+$breakpoint-lg: 992px;
+$breakpoint-lg-down: 991px;
+
+$breakpoint-landscape: 22cm;

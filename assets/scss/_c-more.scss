@@ -1,0 +1,148 @@
+// More Container
+
+.c-more {
+  margin-top: rem-size(20px);
+  min-width: rem-size(240px);
+
+  &__heading {
+    text-transform: uppercase;
+    font-family: $font-alt;
+    font-weight: bold;
+    color: $color-unily-dark-blue;
+    font-size: rem-size(18px);
+    margin-bottom: rem-size(10px);
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__container {
+    height: rem-size(200px); 
+    overflow: auto;
+    position: relative;
+    display: none;
+
+     &.active {
+       display: block;
+     }
+
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: rem-size(10px);
+      height: rem-size(20px);
+      background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+      z-index: 1000;
+    }
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: rem-size(10px);
+      height: rem-size(20px);
+      background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: rem-size(15px 0);
+    list-style: none;
+    position: relative;
+    height: rem-size(200px);
+
+    li {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: rem-size(20px);
+      padding-right: rem-size(25px);
+
+      &:last-child {
+        margin-bottom: rem-size(15px);
+      }
+    }
+
+    a {
+      font-size: rem-size(14px);
+      text-transform: uppercase;
+      font-family: $font-alt;
+      font-weight: bold;
+      color: $color-unily-dark-blue;
+
+      @media (min-width: $breakpoint-head) {
+        position: relative;
+
+        &:after {
+          content: " ";
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 0;
+          border-bottom: rem-size(2px) solid transparent;
+          transition: all .2s ease-in-out;
+        }
+
+        &:hover {
+          &:after {
+           width: 100%;
+           border-bottom-color: $color-unily-dark-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.c-more__heading {
+    &:after {
+        content: " ";
+        display: inline-block;
+        width: rem-size(12px);
+        height: rem-size(12px);
+        vertical-align: 0;
+        margin-left: rem-size(5px);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(#{$cdn-url}media/vs5dubzh/plus-navy.svg);
+        background-size: rem-size(12px 12px);
+    }
+
+    &.active:after {
+        background-image: url(#{$cdn-url}media/fath3k52/minus-navy.svg);
+    }
+}
+
+.c-dropdown__box .c-more {
+  margin-top: rem-size(20px);
+  margin-left: 0;
+
+  &__container {
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: rem-size(10px);
+      height: rem-size(20px);
+      background: linear-gradient(0deg, rgba($color-unily-grey-1,0) 0%, rgba($color-unily-grey-1,1) 100%);
+      z-index: 1000;
+    }
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: rem-size(10px);
+      height: rem-size(20px);
+      background: linear-gradient(180deg, rgba($color-unily-grey-1,0) 0%, rgba($color-unily-grey-1,1) 100%);
+    }
+  }
+}

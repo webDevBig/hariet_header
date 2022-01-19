@@ -1,0 +1,607 @@
+
+// Amina
+
+/*
+// TODO:DELETE
+.c-article__side-container {
+	.c-articles__media {
+		margin-bottom: 10px;
+	}
+}
+*/
+
+.youtube-subscribe-btn {
+	background-color: #ff0000;
+	border: none;
+	color: white;
+	padding: 5px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 12px "YouTube Noto",Roboto,arial,sans-serif;
+	cursor: pointer;
+	border-radius: 2px;
+	&:hover {
+		background-color: #e62117;
+	}
+	&:focus {
+		outline: none !important;
+	}
+	.icon {
+		background: url(#{$cdn-url}media/zpncpwl4/youtube-white.svg) no-repeat;
+		float: left;
+		width: 17px;
+		height: 14.4px;
+		margin-right: 6px;
+		margin-top: 1.2px;
+	}
+	.span {
+		float: left;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.c-articles__content {
+	.c-metadata__item--date {
+		&:before {
+			margin-top: 0 !important;
+			margin-left: 0 !important;
+		}
+	}
+}
+
+// Ana
+
+// TODO - Consolidate with existing global styles...
+/** Global styles inspired by Bootstrap **/
+*, ::after, ::before {
+	box-sizing: border-box;
+	//font-family: 'Roboto', sans-serif;
+	-webkit-overflow-scrolling: touch;
+	//text-shadow: none;
+}
+
+.mx-auto {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.my-5 {
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+}
+
+.mt-5 {
+	margin-top: 3rem !important;
+}
+
+.mt-4 {
+	margin-top: 1.5rem !important;
+}
+
+.mt-2 {
+	margin-top: .5rem !important;
+}
+
+.mt-0 {
+	margin-top: 0 !important;
+}
+
+.mb-3 {
+	margin-bottom: 1rem !important;
+}
+
+.mb-2 {
+	margin-bottom: .5rem !important;
+}
+
+.mb-1 {
+	margin-bottom: .25rem !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.pt-4 {
+	padding-top: 1.5rem !important;
+}
+
+.pb-5 {
+	padding-bottom: 3rem !important;
+}
+
+.pb-4 {
+	padding-bottom: 1.5rem !important;
+}
+
+.pb-3 {
+	padding-bottom: 1rem !important;
+}
+
+.pb-1 {
+	padding-bottom: .25rem !important;
+}
+
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.d-block {
+	display: block !important;
+}
+
+.justify-content-center {
+	-ms-flex-pack: center !important;
+	justify-content: center !important
+}
+
+
+@media (min-width:992px) {
+	.d-lg-none {
+		display: none !important;
+	}
+}
+
+@media (min-width:768px) {
+	.mt-md-4 {
+		margin-top: 1.5rem !important;
+	}
+
+	.mb-md-4 {
+		margin-bottom: 1.5rem !important;
+	}
+
+	.pb-md-5 {
+		padding-bottom: 3rem !important;
+	}
+
+	.text-md-center {
+		text-align: center !important;
+	}
+
+	.text-md-right {
+		text-align: right !important;
+	}
+
+	.d-md-none {
+		display: none !important;
+	}
+}
+
+.full-width {
+	width: 100%;
+}
+
+.max-width-full {
+	max-width: 100%;
+}
+
+.max-width-440 {
+	max-width: 440px;
+}
+
+.min-height-425 {
+	min-height: 425px;
+}
+
+.min-height-650 {
+	min-height: 650px;
+}
+/** End Global styles inspired by Bootstrap **/
+
+// TODO - Consolidate with existing footer styles...
+/** Start footer scss  **/
+.c-foot {
+	font-size: 0.9375rem;
+
+	.c-foot-nav__col {
+		flex: 0 0 auto;
+
+		.c-foot__nav {
+			li {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.c-foot__heading {
+		margin-bottom: 15px;
+		font-size: 0.9375rem;
+	}
+
+	.c-popular__heading {
+		font-size: 1.25rem;
+	}
+
+	.container-wide-2 {
+		width: 100%;
+		max-width: rem-size(1220px) !important;
+	}
+
+	.c-foot-nav__row {
+		margin-top: 0;
+		margin-bottom: 0px;
+
+		.mobile-right,
+		.mobile-left {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+		}
+	}
+
+	.copyright {
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.c-foot {
+		.column-logo {
+			.c-foot__nav {
+				padding-top: 15px;
+			}
+
+			img {
+				margin-top: -10px;
+				max-width: 75px;
+				height: auto !important;
+			}
+		}
+
+		.wrap-unwrap {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+@media only screen and (min-width: 1160px) {
+	.c-foot {
+		.container-wide-2 {
+
+			.mobile-left {
+				.c-foot-nav__col {
+					margin-right: auto;
+					margin-left: auto;
+
+					&:first-of-type {
+						margin-left: 0;
+					}
+				}
+			}
+
+			.mobile-right {
+				.c-foot-nav__col {
+					margin-right: auto;
+					margin-left: auto;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+@media only screen and (min-width: 1670px) {
+	.c-foot {
+		.container-wide-2 {
+			max-width: 105rem;
+			padding-left: 170px;
+			padding-right: 20px;
+		}
+	}
+}
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+	.c-foot-nav__col {
+		padding: 0 0.3rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.c-foot {
+		display: flex;
+		flex-direction: column;
+
+		.c-foot-nav__row {
+			margin-bottom: 0;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			flex-wrap: wrap;
+
+			.mobile-right,
+			.mobile-left {
+				width: auto;
+				min-width: 40%;
+				max-width: 55%;
+				flex-direction: column;
+			}
+
+			.mobile-right {
+				padding-top: 0;
+
+				.c-foot-nav__col {
+					&:not(:first-child) {
+						margin-top: auto;
+					}
+				}
+			}
+
+			.c-foot-nav__col {
+				flex: 0 0 auto;
+				width: 45%;
+				margin-bottom: 10px;
+
+				&:nth-child(1) {
+					flex: 0 0 100%;
+					min-width: 100%;
+				}
+			}
+
+			.mobile-left {
+				.c-foot-nav__col {
+					&:first-child {
+						margin-bottom: 10px;
+					}
+
+					&:not(:nth-child(1)) {
+						&:not(:nth-child(2)) {
+							margin-top: auto;
+						}
+					}
+				}
+			}
+		}
+
+		.c-popular__row.active {
+			display: flex;
+			flex-wrap: wrap;
+
+			.c-popular__col {
+				flex: 0 0 100%;
+			}
+		}
+
+		.c-foot__logo {
+			margin-bottom: 0.625rem !important;
+		}
+
+		.copyright {
+			text-align: center;
+
+			.c-foot__nav {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.column-logo {
+		img {
+			display: none;
+		}
+	}
+}
+
+/** End footer scss  **/
+
+
+/** Tiktok video **/
+.c-embed {
+  &.c-embed {
+    &--tiktok {
+      position: relative;
+      width: 340px;
+      .tiktok-wrapper {
+        padding-bottom: 206%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+// Temp fix for pages with stick nav - .c-page { overflow:hidden } is breaking sticky side nav
+.c-page--sticky-side-nav {
+	overflow:visible !important;
+}
+
+/** Lists **/
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li li {
+  list-style-type: disc;
+}
+
+ul ul {
+  margin-bottom:0;
+}
+
+ol {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: rem-size(5px);
+}
+
+/* Info Call Out Styles */
+.c-info-callout {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-20px;
+	
+	span {
+		display:block;
+		font-size: 60px;
+		font-weight: bold;
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	p {
+		font-size: 18px;
+		padding: 30px;
+		font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin:0;
+	}
+	
+	&-rectangle {
+		width:100%;
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		padding:30px;
+		border-radius:4px;
+		
+		span {
+			font-size: 70px;
+			flex: 0 0 auto;
+		}
+		
+		p {
+			font-size: 20px;	
+		}
+		
+		@media (max-width:767px) {
+			
+			flex-direction:column;
+			
+			p {
+				text-align:center;
+				padding:0;
+			}
+			
+			span {
+				padding:0;
+			}
+		}
+		
+		&-left {
+			
+			p {
+				order:1;
+			}
+			
+			span {
+				order:2;
+				padding-right:30px;
+			}
+		}
+		
+		&-right { 
+			
+			p {
+				order:2;
+			}
+			
+			span {
+				order:1;
+				padding-left:30px;
+			}
+		}
+	}
+	
+	&-circle {
+		border-radius: 50%;
+		overflow: hidden;
+		height: 300px;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		
+		span {
+			order:1;
+		}
+		
+		p {
+			order:2;
+			text-align: center;
+			padding: 0 30px;
+		}
+	}
+}
+
+/* Alternate Quote */
+.c-quote-alt {
+	border-left:none !important;
+	padding-left:0px !important;
+}
+
+.c-quote-alt footer {
+	font-size: 16px !important;
+}
+
+/* Solution/Feature Page Breadcrumb */
+.container-breadcrumb {
+	padding: 60px 20px 0px 20px;
+	max-width: 1048px;
+	width: 100%;
+	margin: 0 auto -30px auto; // TODO - Negative top margin is temp fix for use on solution feature pages where content blocks have top margin of 30px
+
+	@media (max-width: 767px) {
+		padding-top: 25px;
+	}
+}
+
+// snippet title styles
+.post-title {
+	font-weight: 700;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 1.4;
+
+	a {
+		color: $color-unily-black;
+		text-decoration: none;
+	}
+}
+
+.c-articles--side, .c-articles--dropdown {
+	.post-title {
+		font-size: 18px;
+	}
+}
+
+// no-scroll
+.no-scroll {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
+}
+
+// video embed on content call out block
+.c-widget__media .c-embed--video {
+	@media (min-width: $breakpoint-md) {
+		width: 100% !important;
+	}
+}

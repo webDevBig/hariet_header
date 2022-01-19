@@ -1,0 +1,11 @@
+//
+
+.c-block-subscribe {
+  min-height: rem-size(480px);
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $breakpoint-md) {
+    min-height: rem-size(560px);
+  }
+}

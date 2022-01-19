@@ -1,0 +1,512 @@
+// Cookies
+
+.onetrust-pc-dark-filter {
+  background: rgba(#1d1d1f,0.8) !important;
+}
+
+#onetrust-pc-sdk .ot-pc-header {
+  border-bottom: none !important;
+  height: unset !important;
+  padding: 0 !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk h3, #onetrust-consent-sdk #onetrust-pc-sdk h4, #onetrust-consent-sdk #onetrust-pc-sdk h5, #onetrust-consent-sdk #onetrust-pc-sdk h6, #onetrust-consent-sdk #onetrust-pc-sdk p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-ven-lst .ot-ven-opts p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-desc, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-title, #onetrust-consent-sdk #onetrust-pc-sdk .ot-li-title, #onetrust-consent-sdk #onetrust-pc-sdk .ot-sel-all-hdr span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-info, #onetrust-consent-sdk #onetrust-pc-sdk #ot-fltr-modal #modal-header, #onetrust-consent-sdk #onetrust-pc-sdk .ot-checkbox label span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-sel-blk p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-lst-title span, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst .back-btn-handler p, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst .ot-ven-name, #onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-lst #ot-ven-lst .consent-category, #onetrust-consent-sdk #onetrust-pc-sdk .ot-leg-btn-container .ot-inactive-leg-btn, #onetrust-consent-sdk #onetrust-pc-sdk .ot-label-status, #onetrust-consent-sdk #onetrust-pc-sdk .ot-chkbox label span, #onetrust-consent-sdk #onetrust-pc-sdk #clear-filters-handler {
+  color: $color-unily-black !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .privacy-notice-link, #onetrust-consent-sdk #onetrust-pc-sdk .category-vendors-list-handler, #onetrust-consent-sdk #onetrust-pc-sdk .category-vendors-list-handler + a, #onetrust-consent-sdk #onetrust-pc-sdk .category-host-list-handler, #onetrust-consent-sdk #onetrust-pc-sdk .ot-ven-link, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-name a, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-acc-hdr .ot-host-expand, #onetrust-consent-sdk #onetrust-pc-sdk #ot-host-lst .ot-host-info a {
+  color: $color-unily-light-blue !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+#ot-pc-desc br {
+    display: none;
+    content: ' ';
+
+    &::after {
+        content: ' ';
+    }
+}
+
+#onetrust-accept-btn-handler, #accept-recommended-btn-handler, .onetrust-close-btn-handler {
+    border-radius: rem-size(2px) !important;
+    padding: rem-size(9px 15px) !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(16px) !important;
+    border: 0 !important;
+    line-height: 1.35 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    letter-spacing: normal !important;
+    background: $color-unily-light-blue !important;
+    color: $color-white !important;
+
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
+
+    &:active, &:focus {
+        outline: none !important;
+    }
+}
+
+#onetrust-pc-sdk .ot-switch-nob {
+  background-color: #f0f0f0 !important;
+  border: 1px solid #f0f0f0 !important;
+}
+
+#onetrust-pc-sdk .ot-switch-nob:before {
+  left: 1px !important;
+  background-color: #ffffff !important;
+}
+
+#onetrust-pc-sdk .ot-tgl input:focus+.ot-switch {
+  outline: none !important;
+}
+
+#onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob {
+  background-color: $color-unily-light-blue !important;
+  border: 1px solid $color-unily-light-blue !important;
+}
+
+#onetrust-pc-sdk .ot-cat-grp .ot-always-active {
+  color: $color-unily-black !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-grpcntr.ot-acc-txt, #onetrust-consent-sdk #onetrust-pc-sdk .ot-acc-txt .ot-subgrp-tgl .ot-switch.ot-toggle {
+  background-color: #F5F5F5 !important;
+}
+
+#onetrust-banner-sdk {
+  box-shadow: none !important;
+
+  &:focus {
+      outline: none !important;
+  }
+}
+
+#onetrust-consent-sdk #onetrust-policy-text {
+    color:$color-unily-black !important;
+    font-size: rem-size(16px) !important;
+    margin: 0 !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+}
+
+#onetrust-policy-title {
+    margin: 0px 0px 10px 0px !important;
+    padding: 0px !important;
+    font-size: 22px !important;
+    color: $color-unily-black !important;
+}
+
+#onetrust-banner-sdk #onetrust-accept-btn-handler, #onetrust-banner-sdk #onetrust-reject-all-handler, #onetrust-banner-sdk #onetrust-pc-btn-handler {
+    border-radius: rem-size(2px) !important;
+    padding: rem-size(9px 15px) !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    font-family: $font-alt !important;
+    font-weight: bold !important;
+    font-size: rem-size(16px) !important;
+    border: 0 !important;
+    line-height: 1.35 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    letter-spacing: normal !important;
+    min-width: 0 !important;
+    background: $color-unily-light-blue !important;
+    color: $color-white !important;
+    opacity: 1 !important;
+
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+#onetrust-banner-sdk #onetrust-pc-btn-handler.cookie-setting-link {
+    background: transparent !important;
+    text-decoration: none !important;
+    opacity: 0.6 !important;
+    margin-left: 10px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#onetrust-banner-sdk #onetrust-button-group {
+    display: inline-flex !important;
+}
+
+#onetrust-banner-sdk .ot-sdk-eight.ot-sdk-columns {
+  float: none !important;
+}
+
+#onetrust-banner-sdk #onetrust-policy {
+  margin: 0 !important;
+} 
+
+#onetrust-banner-sdk .ot-sdk-columns {
+  margin-left: 0 !important;
+}
+
+#onetrust-banner-sdk .ot-sdk-container {
+  width: 100% !important;
+  padding: rem-size(40px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: rem-size(1600px) !important;
+}
+
+#onetrust-banner-sdk.otCenterRounded {
+    max-width: 500px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: fit-content !important;
+    margin: auto !important;
+    transform: none !important; //translateY(-50%);
+}
+
+#onetrust-banner-sdk .ot-sdk-row {
+  @media (min-width: $breakpoint-head) {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important; 
+  }
+}
+
+#onetrust-banner-sdk #onetrust-accept-btn-handler {
+  width: auto !important;
+  min-width: unset !important;
+}
+
+#onetrust-banner-sdk #onetrust-close-btn-container {
+  display: none !important;
+}
+
+#onetrust-banner-sdk button {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+#onetrust-banner-sdk.vertical-align-content #onetrust-button-group-parent {
+  position: relative !important; //absolute;
+  top: unset !important; //50%;
+  left: unset !important; //60%;
+  transform: none !important; //translateY(-50%);
+  width: auto !important;
+  margin: 0 !important;
+}
+
+#onetrust-banner-sdk:not(.ot-iab-2) #onetrust-button-group-parent {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    padding: 15px 0px 0px 0px !important;
+    display: block !important;
+}
+
+#onetrust-banner-sdk .ot-sdk-row:after {
+  display: none !important;
+}
+
+#onetrust-banner-sdk:not(.ot-iab-2) #onetrust-group-container {
+  width: 100% !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-btn-handler.cookie-setting-link {
+    margin-right: 0 !important;
+    color: $color-unily-black !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk button:not(#clear-filters-handler):not(.ot-close-icon):not(#filter-btn-handler):not(.ot-remove-objection-handler):not(.ot-obj-leg-btn-handler) {
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
+#onetrust-pc-sdk .ot-btn-container {
+  padding: rem-size(15px 20px) !important;
+}
+
+#onetrust-pc-sdk .ot-pc-logo {
+  display: none !important;
+}
+
+#onetrust-pc-sdk button {
+  margin-bottom: 0 !important;
+}
+
+#onetrust-pc-sdk #ot-pc-content {
+  padding-right: 35px !important;
+  top: 20px !important;
+  margin: 1px 3px 0 35px !important;
+  width: calc(100% - 70px) !important;
+}
+
+#onetrust-pc-sdk.otPcCenter {
+
+  top:0 !important;
+  bottom: 0 !important;
+  margin: auto !important;
+
+  @media (min-width: 601px) {
+    max-height: calc(100vh - 15%) !important;
+    height: rem-size(860px) !important;
+  }
+}
+
+.ot-category-desc {
+    max-width: 400px !important;
+}
+
+#onetrust-pc-sdk .ot-cat-item p {
+  font-size: rem-size(14px) !important;
+  line-height: 1.4 !important;
+}
+
+#onetrust-pc-sdk .ot-cat-header {
+  font-size: rem-size(16px) !important;
+}
+
+#onetrust-pc-sdk .ot-cat-grp .ot-always-active {
+  font-size: rem-size(16px) !important;
+}
+
+#onetrust-pc-sdk #ot-pc-desc {
+  font-size: rem-size(14px) !important;
+  line-height: 1.4 !important;
+}
+
+#onetrust-pc-sdk #ot-category-title {
+  font-size: rem-size(18px) !important;
+}
+
+#onetrust-pc-sdk #ot-pc-title {
+  font-size: rem-size(22px) !important;
+}
+
+#onetrust-pc-sdk #ot-pc-desc a {
+  margin-left: 0 !important;
+  line-height: 1.4 !important;
+}
+
+#onetrust-pc-sdk .ot-cat-grp {
+  margin-top: rem-size(30px) !important;
+  margin-bottom: rem-size(20px) !important;
+}
+
+#onetrust-pc-sdk .ot-pc-footer {
+  border-top: none !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .privacy-notice-link, #onetrust-consent-sdk #onetrust-pc-sdk .category-host-list-handler {
+  text-decoration: none !important;
+  background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px !important;
+  transition: background-size .3s; 
+  padding-bottom: 2px !important;
+  display: inline-block !important;
+
+  &:hover {
+    background-size: 100% 2px !important;
+  }
+
+  &:focus, &:active {
+    outline: none !important;
+  }
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .privacy-notice-link {
+  display: inline !important;
+  padding-bottom: 2px !important;
+  line-height: 1.2 !important;
+}
+
+#onetrust-pc-sdk .ot-pc-footer-logo {
+  display: none !important;
+}
+
+#onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
+    background: url(#{$cdn-url}media/uuzbwrlw/close-black.svg) no-repeat center center !important;
+    background-size: rem-size(12px 12px) !important;
+    top: 20px !important;
+    right: 25px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+        opacity: 1 !important;
+    }
+}
+
+#onetrust-pc-sdk .ot-close-icon {
+  height: rem-size(12px) !important;
+  width:rem-size(12px) !important;
+  outline: none !important;
+}
+
+#onetrust-pc-sdk #ot-pc-lst {
+  top: rem-size(25px) !important; //60px;
+}
+
+#onetrust-pc-sdk a.back-btn-handler,
+#onetrust-pc-sdk .ot-host-box {
+  &:focus,
+  &:active {
+    outline: none !important;
+    border: 0 !important;
+    //box-shadow: none !important;
+  }
+}
+
+#onetrust-pc-sdk #filter-btn-handler {
+  background-color: $color-unily-light-blue !important;
+  border: 1px solid $color-unily-light-blue !important;
+  outline: none !important;
+}
+
+#onetrust-pc-sdk .ot-chkbox input:checked~label::before {
+  background-color: $color-unily-light-blue !important;
+}
+
+#onetrust-pc-sdk .ot-chkbox input:focus~label::before {
+  border: 1px solid $color-unily-light-blue !important;
+  outline: none !important;
+}
+
+#onetrust-pc-sdk .ot-chkbox label::before {
+  border: 1px solid $color-unily-light-blue !important;
+}
+
+#onetrust-consent-sdk {
+	#onetrust-banner-sdk {
+        position:fixed !important;
+	}
+}
+
+/* Cookie Policy Styles */
+
+div#ot-sdk-cookie-policy {
+
+    font, h1, h2, h3, h4, h5, h6, span, a {
+        color: $color-unily-black !important;
+    }
+
+    div, p {
+        font-size: 18px !important;
+        color: $color-unily-black !important;
+        line-height: 1.4 !important;
+    }
+
+    table {
+        width: 100% !important;
+        font-size: rem-size(16px) !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        table-layout: fixed !important;
+        border: none !important;
+
+        ul, ol {
+            padding-left: 1.2rem !important;
+        }
+
+        li {
+            margin-bottom: rem-size(5px) !important;
+        }
+
+        tr {
+            border-bottom: 1px solid $color-02 !important;
+        }
+
+        th {
+            padding-bottom: rem-size(10px) !important;
+            padding-left: rem-size(10px) !important;
+            padding-right: rem-size(10px) !important;
+            vertical-align: bottom !important;
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            color: $color-unily-black !important;
+            background-color: #FFF !important;
+            border-left: none !important;
+            border-right: none !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+            }
+
+            small {
+                font-weight: normal !important;
+                font-size: inherit !important;
+            }
+        }
+
+        td {
+            vertical-align: top !important;
+            height: rem-size(70px) !important;
+            padding: rem-size(10px) !important;
+            padding-bottom: rem-size(5px) !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important; // table overflows, not ideal
+            font-size: 16px !important;
+            color: $color-unily-black !important;
+            border-left: none !important;
+            border-right: none !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+            }
+
+            &.integrations {
+                vertical-align: middle !important;
+            }
+        }
+
+        small {
+            font-size: rem-size(14px) !important;
+        }
+
+        tbody + thead th {
+            padding-top: rem-size(70px) !important;
+
+            &:first-child {
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+button.ot-sdk-show-settings {
+    background: $color-unily-light-blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 7px 15px;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: $font-alt;
+    font-weight: bold;
+    color: $color-unily-white !important;
+    align-self: center;
+
+    &:hover {
+        background: darken($color-unily-light-blue, 10%) !important;
+    }
+}

@@ -1,0 +1,22 @@
+// 
+
+.c-block-about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: $color-unily-dark-blue; //linear-gradient(90deg, #3EC8ED 0%, #3FC3A3 100%);
+  color: $color-white;
+
+  @media (max-width: $breakpoint-md-down) {
+    height: calc(100vh - 50px);
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: normal;
+
+    @media (max-width: $breakpoint-md-down) {
+      font-size: rem-size(30px);
+    }
+  }
+}

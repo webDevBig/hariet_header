@@ -1,0 +1,116 @@
+//
+
+.c-social {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        padding-left: rem-size(4px);
+        padding-right: rem-size(4px);
+    }
+
+    &__link {
+        font: 0/0 a;
+        display: block;
+
+        &:before {
+            content: "";
+            display: block;
+            width: rem-size(20px);
+            height: rem-size(20px);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: rem-size(20px 20px);
+        }
+
+        &--linkedin:before {
+            background-image: url(#{$cdn-url}media/mgtp43ap/linkedin-blue.svg);
+			width: rem-size(22px) !important;
+			height: rem-size(32px) !important;
+			//background-size: contain !important;
+        }
+
+        &--youtube:before {
+            background-image: url(#{$cdn-url}media/ia5c1nvc/youtube-blue.svg);
+            width: rem-size(25px);
+            background-size: rem-size(25px 25px);
+        }
+
+        &--twitter:before {
+            background-image: url(#{$cdn-url}media/ww0nznoc/twitter-blue.svg);
+            background-size: rem-size(22px 22px);
+        }
+
+        &--facebook:before {
+            background-image: url(#{$cdn-url}media/e1qehzds/facebook-blue.svg);
+            background-size: rem-size(18px 18px);
+            width: rem-size(10px);
+        }
+
+        &--instagram:before {
+            background-image: url(#{$cdn-url}media/ytqbespx/instagram-blue.svg);
+            background-size: rem-size(18px 18px);
+        }
+    }
+
+    &--foot {
+        justify-content: flex-start;
+
+        @media (min-width: $breakpoint-md) {
+            justify-content: flex-end;
+            margin-bottom: rem-size(42px);
+        }
+
+        .c-social__item {
+            padding-left: rem-size(15px);
+            padding-right: rem-size(15px);
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .c-social__link {
+            &:before {
+                width: rem-size(28px);
+                height: rem-size(28px);
+                background-size: rem-size(28px 28px);
+            }
+
+            &--linkedin:before {
+                background-image: url(#{$cdn-url}media/hv0ljypp/linkedin-navy.svg);
+            }
+
+            &--vimeo:before {
+                background-image: url(#{$cdn-url}media/euomro2b/vimeo-navy.svg);
+            }
+
+            &--twitter:before {
+                background-image: url(#{$cdn-url}media/vmle3xad/twitter-navy.svg);
+                background-size: rem-size(28px 28px);
+            }
+
+            &--facebook:before {
+                background-image: url(#{$cdn-url}media/xuvf0fxx/facebook-navy.svg);
+                background-size: rem-size(24px 24px);
+                width: rem-size(14px);
+            }
+
+            &--instagram:before {
+                background-image: url(#{$cdn-url}media/imbjhssy/instagram-navy.svg);
+                background-size: rem-size(25px 25px);
+            }
+			
+			&--youtube:before {
+                background-image: url(#{$cdn-url}media/4hnfbypb/youtube-navy.svg);
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+// Pillar pages
+
+.c-content {
+  &__content {
+   .img-full {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a:not(.btn):not(.tag) {
+      background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      padding-bottom: 2px;
+    }
+
+    a:not(.btn):not(.tag):hover {
+      background-size: 100% 2px;
+    }
+
+    blockquote {
+      font-size: rem-size(22px);
+      border-left: 2px solid $color-unily-light-blue;
+      margin-left: 0;
+      padding-left: rem-size(20px);
+
+      footer {
+        font-size: rem-size(14px);
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    margin: rem-size(0 -10px);
+    flex-wrap: nowrap;
+
+    &__side,
+    &__content {
+      padding-left: rem-size(10px);
+      padding-right: rem-size(10px);
+    }
+
+    &__side {
+      flex: 0 0 20%;
+      margin-top: rem-size(-26px);
+    }
+
+    &__content{
+      flex: 0 0 80%;
+      margin-top: rem-size(-29px);
+    }
+
+    &__side-container {
+      position: sticky;
+      top: rem-size(120px);
+    }
+  }
+
+  .container {
+    max-width: rem-size(820px);
+    padding-left: 0;
+    padding-right: 0;
+
+    .container {
+      margin-bottom: 1.25rem;
+    }
+  }
+}

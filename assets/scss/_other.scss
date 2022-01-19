@@ -1,0 +1,36 @@
+// Other
+
+.nav-active {
+  @media (max-width: $breakpoint-head-down) {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.c-page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &--top {
+    @media (min-width: $breakpoint-head) {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+.c-head--transparent-alt + .c-page--top {
+  padding-top: 0;
+}
+
+.c-head--transparent-alt + .c-page--top .c-block-video {
+  max-height: 100vh !important;
+}
+
+
+// Add to Calendar
+
+.addeventatc {
+  z-index: 1 !important;
+}

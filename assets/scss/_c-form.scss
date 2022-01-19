@@ -1,0 +1,393 @@
+// Forms
+
+.c-form {
+  @media (min-width: $breakpoint-md) {
+    max-width: rem-size(440px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  + p {
+    margin-top: rem-size(20px);
+  }
+
+  &--alt {
+    @media (min-width: $breakpoint-md) {
+      max-width: rem-size(580px);
+    }
+  }
+
+  &--subscribe {
+    max-width: rem-size(720px);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: rem-size(16px);
+    text-align: center;
+    position: relative;
+
+    .hs-input {
+      border: 1px solid $color-02;
+      margin: 0;
+      font-size: rem-size(18px);
+      padding: rem-size(12px 140px 12px 15px);
+      background: transparent;
+      border-radius: 2px;
+      color: $color-unily-light-blue; //$color-white;
+      height: rem-size(46px);
+      border-color: rgba($color-white, 0.7);
+      
+      &::placeholder {
+        color: rgba($color-white, 0.7); //$color-08; //$color-07; //$color-unily-grey-3;
+      }
+
+      &:focus {
+        border-color: $color-unily-light-blue;
+        outline: none;
+        box-shadow: inset 0 0 0 1px $color-unily-light-blue;
+        //color: $color-unily-light-blue !important;
+      }
+
+    }
+
+    .hs-submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .hs-richtext {
+      color: $color-white !important;
+    }
+  }
+}
+
+/*.c-subscribe .c-form--subscribe,*/ .c-block-home .c-form--subscribe {
+   @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+
+  .hs-richtext {
+    color: inherit;
+  }
+}
+
+.c-block-home .c-form--subscribe {
+  .hs-richtext {
+    color: $color-01 !important;
+  }
+  .hs-input {
+    color: $color-unily-light-blue; //$color-unily-black;
+    border: 1px solid $color-02;
+
+    &::placeholder {
+      color: $color-08; //$color-07; //$color-unily-grey-3;
+    }
+
+    &:focus {
+      color: $color-unily-light-blue;
+      border-color: $color-unily-light-blue;
+    }
+  }
+}
+
+.c-block-subscribe {
+    .hs-main-font-element {
+    color: inherit !important;
+  }
+}
+
+.c-block-full--bg .c-form {
+  .hs-input {
+    border: 1px solid $color-02;
+    margin: 0;
+    font-size: rem-size(18px);
+    padding: rem-size(12px 140px 12px 15px);
+    background: transparent;
+    border-radius: 2px;
+    color: $color-white;
+
+    &:focus {
+      border-color: $color-unily-light-blue;
+      outline: none;
+      box-shadow: inset 0 0 0 1px $color-unily-light-blue;
+    }
+  }
+
+  .hs-richtext {
+    color: $color-white;
+  }
+}
+
+.hs-form ul {
+  padding-left: 0 !important;
+}
+
+.hs-form-radio,
+.hs-form-checkbox {
+  margin-bottom: rem-size(5px);
+}
+
+.hs-form-radio label,
+.hs-form-checkbox label {
+  display: block;
+}
+
+.hs-form-checkbox label span {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-left: rem-size(28px);
+  font-size: rem-size(16px);
+}
+
+.hs-form-checkbox label span:before {
+  text-align: center;
+  font-size: rem-size(11px);
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  top: rem-size(2px);
+  left: 0;
+  border: 1px solid $color-06;
+  color: $color-unily-pink;
+  width: rem-size(18px);
+  height: rem-size(18px);
+  line-height:rem-size(18px);
+}
+
+.hs-form-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.hs-form-checkbox input[type="checkbox"]:checked + span:before {
+  border-color: $color-unily-light-blue;
+  background: url(#{$cdn-url}media/cubcwicu/checkmark-blue.svg) no-repeat center center;
+  background-size: rem-size(12px 12px);
+}
+
+.hs-form-checkbox input[type="checkbox"][disabled] + span {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.hs-form-radio label span {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-left: rem-size(28px);
+  font-size: rem-size(16px);
+}
+
+.hs-form-radio label span:before {
+  text-align: center;
+  font-size: rem-size(11px);
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 0;
+  border: 1px solid #c8c8c8;
+  color: $color-unily-pink;
+  width: rem-size(18px);
+  height: rem-size(18px);
+  line-height: rem-size(18px);
+}
+
+.hs-form-radio input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.hs-form-radio input[type="radio"]:checked + span:before {
+  border: 4px solid $color-unily-light-blue;
+}
+
+.hs-form-radio input[type="radio"][disabled] + span {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.inputs-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  overflow: hidden;
+
+  .hs-input {
+    width: 0;
+  }
+
+  li {
+    overflow: hidden;
+  }
+}
+
+select.hs-input{color:#999;}
+select.hs-input:focus{color:$color-unily-light-blue;}
+
+.hs-main-font-element {
+  color: $color-unily-black !important;
+  margin-bottom: 1.25rem;
+}
+
+.hs-fieldtype-select .input {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  background: url(#{$cdn-url}media/w5xe2k00/arrow-down-gray.svg) no-repeat;
+  background-size: rem-size(20px 20px);
+  background-position: right 15px center;
+
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: $color-unily-light-blue; //$color-unily-black;
+
+    &::placeholder {
+      color: $color-08; //$color-07; //$color-unily-grey-3;
+    }
+
+    &.is-placeholder {
+      color: $color-08; //$color-07; //$color-unily-grey-3;
+    }
+
+    &:invalid {
+      color: $color-08; //$color-unily-grey-3;
+    }
+
+    &:focus {
+      border-color: $color-unily-light-blue;
+      color: $color-unily-light-blue;
+      outline: none;
+    }
+  }
+}
+
+.hs-button:focus {
+  outline: none;
+}
+
+.bg-06 .hs-richtext a {
+  color: $color-unily-light-blue !important;
+}
+
+.hs-fieldtype-radio  > label, .hs-fieldtype-checkbox  > label {
+  display: block !important;
+  font-size: rem-size(16px);
+  font-weight: bold;
+  margin-bottom: rem-size(6px);
+}
+
+.hs-form-field {
+  > label {
+    display: none;
+  }
+}
+
+.hs-form-field {
+  margin-bottom: rem-size(20px);
+}
+
+.hs-input {
+  border: 1px solid $color-02;
+  margin: 0;
+  width: 100%;
+  font-size: rem-size(18px);
+  padding: rem-size(12px 15px);
+  border-radius: 2px;
+  color: $color-unily-light-blue; //$color-unily-black; //$color-unily-light-blue; //
+
+  &::placeholder {
+    color: $color-08; //$color-07; //$color-unily-grey-3;
+  }
+
+  &:focus {
+    border-color: $color-unily-light-blue;
+    color: $color-unily-light-blue;
+    outline: none;
+    box-shadow: inset 0 0 0 1px $color-unily-light-blue;
+  }
+}
+
+textarea.hs-input {
+    height: rem-size(92px); //rem-size(120px);
+  }
+
+.hs-button {
+  border-radius: rem-size(2px);
+  padding: rem-size(9px 15px);
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: $font-alt;
+  font-weight: bold;
+  font-size: rem-size(18px);
+  border: 0;
+  margin: 0;
+  line-height: 1.35;
+  cursor: pointer;
+  text-align: center;
+  padding-top: rem-size(11px);
+  padding-bottom: rem-size(11px);
+  display: block;
+  background: $color-unily-light-blue;
+  color: $color-white;
+  white-space: normal;
+  width: 100%;
+
+  &:hover {
+    background: darken($color-unily-light-blue, 10%);
+  }
+}
+
+.hs-richtext {
+    font-size: rem-size(16px) !important;
+    color: $color-01 !important;
+
+    a {
+        color: $color-unily-light-blue !important;
+        background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue) !important;
+        background-position: 0% 100% !important;
+        background-repeat: no-repeat !important;
+        background-size: 0% 2px !important;
+        transition: background-size .3s !important;
+        padding-bottom: 2px !important;
+
+        &:hover {
+            background-size: 100% 2px !important;
+        }
+    }
+}
+
+.hs-error-msgs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: rem-size(16px);
+  margin-top: rem-size(5px);
+}
+
+.submitted-message {
+  background: $color-unily-grey-1;
+  padding: rem-size(20px);
+  border-radius: rem-size(4px);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    background-image: linear-gradient($color-unily-light-blue, $color-unily-light-blue);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding-bottom: 2px;
+
+    &:hover {
+      background-size: 100% 2px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Functions
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function unit($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+
+// Rem Font size calculation
+
+@function rem-size($px: 0, $rem-px-base: $rem-size-base) {
+  $rem-size-list: ();
+  @each $value in $px {
+    $rem-size-list: append($rem-size-list, unquote(unit($value) / strip-unit($rem-px-base) + 'rem'), 'space');
+  }
+  @return $rem-size-list;
+}
+
+@function rem-size-alt($px: 0, $rem-px-base: $rem-size-base) {
+  $rem-size-list: ();
+  @each $value in $px {
+    $rem-size-list: append($rem-size-list, unquote(unit($value) / strip-unit($rem-px-base)), 'space');
+  }
+  @return $rem-size-list;
+}

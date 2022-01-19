@@ -1,0 +1,52 @@
+// Alert
+
+.c-alert {
+    position: relative;
+    font-size: rem-size(16px);
+    padding: rem-size(4px 32px 4px 0);
+    min-height: rem-size(20px);
+
+    @media (min-width: $breakpoint-head) {
+        text-align: center;
+    }
+
+    .container > *:last-child {
+        margin-bottom: 0;
+    }
+
+    &__close {
+        font: 0/0 a;
+        position: absolute;
+        top: 50%;
+        margin-top: rem-size(-6px);
+        right: rem-size(20px);
+        outline: 0 !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:focus {
+            outline: 0 !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        &:after {
+            content: " ";
+            display: block;
+            width: rem-size(12px);
+            height: rem-size(12px);
+            background: url(#{$cdn-url}media/5wbncnts/close-white.svg) no-repeat center center;
+            background-size: rem-size(12px 12px);
+        }
+    }
+}

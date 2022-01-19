@@ -1,0 +1,74 @@
+// Offices
+
+.c-offices {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    color: $color-unily-black;
+    display: block;
+  }
+
+  &__heading {
+    font-family: $font-alt;
+    font-weight: bold;
+    font-size: rem-size(20px);
+    margin-bottom: rem-size(10px);
+  }
+
+  &__link {
+    display: block;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__media {
+    width: 100%;
+    position: relative;
+
+     &:before {
+      content: " ";
+      display: block;
+      width: 100%;
+      padding-bottom: 150%; // 1920x840 16x7 aspect ratio
+    }
+  }
+
+  &__item {
+    margin-bottom: rem-size(30px);
+  }
+
+  &__img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: rem-size(0 -10px);
+
+    &__item {
+      padding: rem-size(0 10px);
+      flex: 0 0 50%;
+      margin-bottom: rem-size(60px);
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    &__item {
+      flex: 0 0 33.3333%;
+    }
+  }
+}

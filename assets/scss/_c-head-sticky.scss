@@ -1,0 +1,20 @@
+// Sticky Header
+
+body.sticky-header {
+
+    .c-head {
+        position: fixed;
+    }
+
+    .c-page {
+        padding-top: rem-size(50px);
+        
+        @media (min-width: $breakpoint-head) {
+            padding-top: rem-size(64px);
+        }
+
+        &--top {
+            padding-top: rem-size(50px);
+        }
+    }
+}

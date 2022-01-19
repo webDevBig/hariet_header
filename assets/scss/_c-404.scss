@@ -1,0 +1,40 @@
+// 404
+
+.c-404 {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: rem-size(60px 20px 20px 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $color-white;
+  font-size: rem-size(20px);
+  align-self: stretch;
+  height: 100%;
+  flex-grow: 1;
+
+  @media (min-width: $breakpoint-md) {
+    padding: rem-size(70px);
+    min-height: 100vh;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    font-size: rem-size(38px);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: rem-size(10px);
+    font-family: $font-alt;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: rem-size(60px);
+    }
+  }
+}

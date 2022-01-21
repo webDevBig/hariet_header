@@ -88,7 +88,7 @@
         transition: hover .3s;
     }
 
-    .c-nav__item:hover img.arrow_icon {
+    .dropdown:hover img.arrow_icon {
         opacity: 1;
     }
 
@@ -260,9 +260,6 @@
         transform: rotate(45deg);
     }
 
-
-
-
     .c-head.c-head--subnav {
         color: #fff;
         background: #112A3F;
@@ -303,6 +300,8 @@
     .c-head--subnav .c-nav__link--search:after {
         background: url(https://unilyweb2020dev.azureedge.net/media/zjmlsevn/search-white.svg) no-repeat;
     }
+    
+    
 }
 
 

@@ -92,6 +92,10 @@
         opacity: 1;
     }
 
+    .c-nav__item:hover .c-nav__text {
+        background-size: 100% 3px;
+    }
+
     .nav > li > a,
     .nav > li {
         position: relative;
@@ -288,6 +292,9 @@
     .c-head--subnav .c-nav__link:hover .c-nav__text {
         background-size: 100% 3px;
     }
+     .c-nav__item:hover .c-nav__link.active .c-nav__text {
+        background-size: 100% 3px;
+    }
 
     .c-head--subnav .c-logo__img {
         display: block;
@@ -300,8 +307,8 @@
     .c-head--subnav .c-nav__link--search:after {
         background: url(https://unilyweb2020dev.azureedge.net/media/zjmlsevn/search-white.svg) no-repeat;
     }
-    
-    
+
+
 }
 
 

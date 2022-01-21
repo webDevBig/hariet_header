@@ -108,9 +108,8 @@
         top: 100%;
         opacity: 0;
         visibility: hidden;
-        transform: scale(0.8) translateZ(0px);
+        transform: scale(0.8) translateZ(0px) translateX(-9px);
         transition: all .2s ease-in-out 0s;
-        margin:0 20px 0 0;
     }
 
     .c-nav__item {
@@ -125,8 +124,15 @@
     .c-nav__item:hover .firstlevel {
         opacity: 1;
         visibility: visible;
-        transform: none;
+        transform: scale(1) translateZ(0px) translateX(-9px);
         transition: all 0.2s ease-in-out 0s;
+    }
+    .features_item .firstlevel
+    {
+        transform: scale(0.8) translateZ(0px) translateX(5px);
+    }
+     .features_item.c-nav__item:hover .firstlevel {
+        transform: scale(1) translateZ(0px) translateX(5px);
     }
 
     .dropdown .thirdlevel {
@@ -247,9 +253,7 @@
         transform: rotate(45deg);
     }
    
-    .features_item .firstlevel{
-        margin: 0 0 0 9px;
-    }
+   
    
 
     .c-head.c-head--subnav {

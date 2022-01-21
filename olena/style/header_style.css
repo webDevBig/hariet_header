@@ -59,18 +59,24 @@
         color: #1c1c1b;
         font-weight: bold;
         text-transform: uppercase;
-        padding: 0.25rem 0;
-        background-image: linear-gradient(#333, #333);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 3px;
-        transition: background .3s;
+
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
     }
 
-    .dropdown-menu > li:hover > a {
+    .dropdown-menu > li > a span,
+    .dropdown-menu.thirdlevel > li > a {
+        background-image: linear-gradient(#333, #333);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        padding: 0.25rem 0;
+        transition: background .3s;
+    }
+
+    .dropdown-menu > li:hover > a span,
+    .dropdown-menu.thirdlevel > li:hover > a {
         background-size: 100% 3px;
     }
 
@@ -127,11 +133,12 @@
         transform: scale(1) translateZ(0px) translateX(-9px);
         transition: all 0.2s ease-in-out 0s;
     }
-    .features_item .firstlevel
-    {
+
+    .features_item .firstlevel {
         transform: scale(0.8) translateZ(0px) translateX(5px);
     }
-     .features_item.c-nav__item:hover .firstlevel {
+
+    .features_item.c-nav__item:hover .firstlevel {
         transform: scale(1) translateZ(0px) translateX(5px);
     }
 
@@ -252,9 +259,9 @@
         left: 47%;
         transform: rotate(45deg);
     }
-   
-   
-   
+
+
+
 
     .c-head.c-head--subnav {
         color: #fff;

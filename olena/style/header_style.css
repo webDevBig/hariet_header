@@ -73,6 +73,7 @@
         background-size: 0% 3px;
         padding: 0.25rem 0;
         transition: background .3s;
+        line-height: 1;
     }
 
     .dropdown-menu > li:hover > a span,

@@ -235,17 +235,24 @@
         color: #1c1c1b;
         font-weight: bold;
         text-transform: uppercase;
-        background-image: linear-gradient(#333, #333);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 3px;
-        transition: background .3s;
+        
+       
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
     }
+    .dropdown .firstlevel.sub-menu-clm-three li a span,
+    .dropdown .firstlevel.sub-menu-clm-two li a span
+    {
+        padding: 0.25rem 0;
+        background-image: linear-gradient(#333, #333);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+         transition: background .3s;
+    }
 
-    .dropdown .firstlevel.sub-menu-clm-three li a:hover {
+    .dropdown .firstlevel.sub-menu-clm-three li a:hover span{
         background-size: 100% 3px;
     }
 

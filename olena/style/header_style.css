@@ -158,7 +158,7 @@
         background-color: #f5f5f5;
         visibility: hidden;
         box-shadow: rgb(0 0 0 / 12%) 9px 5px 24px;
-       border-radius: 8px;
+        border-radius: 8px;
     }
 
     .twolevel:hover .sub-menu.thirdlevel {
@@ -168,8 +168,7 @@
     }
 
     .css-1578db3 {
-        width: 0.5rem;
-        height: 0.8rem;
+        width: 6px;
         display: inline-block;
         line-height: 1em;
         flex-shrink: 0;
@@ -178,6 +177,7 @@
         fill: none;
         stroke: currentcolor;
         margin-bottom: 3px;
+        filter: invert(1);
     }
 
     .twolevel .css-1578db3 {
@@ -216,11 +216,13 @@
         padding: 8px 0;
         margin: 0 2rem;
     }
-     .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type li,
+
+    .dropdown .firstlevel.sub-menu-clm-three .menu_clm:last-of-type li,
     .dropdown .firstlevel.sub-menu-clm-two .menu_clm:last-of-type li {
         margin: 0 2em 0 1rem;
     }
-      .dropdown .firstlevel.sub-menu-clm-three .menu_clm:first-of-type li,
+
+    .dropdown .firstlevel.sub-menu-clm-three .menu_clm:first-of-type li,
     .dropdown .firstlevel.sub-menu-clm-two .menu_clm:first-of-type li {
         margin: 0 1em 0 2rem;
     }
@@ -235,24 +237,24 @@
         color: #1c1c1b;
         font-weight: bold;
         text-transform: uppercase;
-        
-       
+
+
         white-space: nowrap;
         width: fit-content;
         line-height: calc(24/18);
     }
+
     .dropdown .firstlevel.sub-menu-clm-three li a span,
-    .dropdown .firstlevel.sub-menu-clm-two li a span
-    {
+    .dropdown .firstlevel.sub-menu-clm-two li a span {
         padding: 0.25rem 0;
         background-image: linear-gradient(#333, #333);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 3px;
-         transition: background .3s;
+        transition: background .3s;
     }
 
-    .dropdown .firstlevel.sub-menu-clm-three li a:hover span{
+    .dropdown .firstlevel.sub-menu-clm-three li a:hover span {
         background-size: 100% 3px;
     }
 
@@ -306,7 +308,8 @@
     .c-head--subnav .c-nav__link:hover .c-nav__text {
         background-size: 100% 3px;
     }
-     .c-nav__item:hover .c-nav__link.active .c-nav__text {
+
+    .c-nav__item:hover .c-nav__link.active .c-nav__text {
         background-size: 100% 3px;
     }
 

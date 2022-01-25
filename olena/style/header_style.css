@@ -81,17 +81,32 @@
         background-size: 100% 3px;
     }
 
-    .c-nav__item img.arrow_icon {
-        width: 6px;
+
+    .c-nav__link::after,
+    .c-nav__link.active:after {
         transform: rotate(90deg);
         margin: 0 0 0 9px;
-        opacity: 0;
         transition: hover .3s;
+        width: 6px;
+        height: 11px;
+        display: inline-block;
+        line-height: 1em;
+        vertical-align: middle;
+        margin-bottom: 3px;
+        content: '';
+        visibility: hidden;
+        background-image: url(../../assets/img/arrow-right-white_new.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        border: none;
+        top: 0;
     }
 
-    .dropdown:hover img.arrow_icon {
-        opacity: 1;
+    .dropdown:hover .c-nav__link::after {
+        visibility: visible;
     }
+
 
     .c-nav__item:hover .c-nav__text {
         background-size: 100% 3px;
@@ -167,25 +182,23 @@
         transition: all 0.2s ease-in-out 0s;
     }
 
-    .css-1578db3 {
+    .twolevel-item::after {
         width: 6px;
+        height: 11px;
         display: inline-block;
         line-height: 1em;
-        flex-shrink: 0;
-        color: currentcolor;
         vertical-align: middle;
-        fill: none;
-        stroke: currentcolor;
         margin-bottom: 3px;
         filter: invert(1);
-    }
-
-    .twolevel .css-1578db3 {
+        content: '';
         visibility: hidden;
         margin-left: 4px;
+        background-image: url(../../assets/img/arrow-right-white_new.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
-    .twolevel:hover .css-1578db3 {
+    .twolevel:hover .twolevel-item::after {
         visibility: visible;
     }
 

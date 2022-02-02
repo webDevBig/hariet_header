@@ -17,13 +17,13 @@
 }
 
 .medium_width_content {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;
 }
 .medium_width__low_content {
-    max-width: 1100px;
+    max-width: 1010px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;

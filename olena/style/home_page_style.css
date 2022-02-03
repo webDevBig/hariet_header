@@ -56,6 +56,24 @@ div.medium_width_content {
 .c-clients--5 li:nth-of-type(5) {
     margin: 1.875rem 0 1.875rem 5.875rem;
 }
+.c-articles--carousel > li:first-of-type {
+    flex: 0 0 23.75rem;
+    padding-left: 0;
+    padding-right: 0.625rem;
+}
+.c-articles--carousel > li:last-of-type {
+    flex: 0 0 23.75rem;
+    padding-left: 0.625rem;
+    padding-right: 0;
+}
+.c-articles--carousel
+{
+    padding: 0;
+}
+.c-articles--carousel:after
+{
+    display: none;
+}
 
 @media all and (max-width:1024px) {
     .medium_width_content {

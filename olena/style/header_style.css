@@ -48,6 +48,13 @@
         list-style: none;
         padding: 7px 0px;
         margin: 0 2rem;
+        width: fit-content;
+    }
+    .dropdown-menu > li.twolevel
+    {
+       padding: 7px 2rem 7px 0;
+        margin: 0 0 0 2rem; 
+        width: auto;
     }
 
     .dropdown-menu > li > a {

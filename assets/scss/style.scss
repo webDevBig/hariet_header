@@ -24,8 +24,9 @@
 // Components
 @import "c-head"; // Page header with basic navigation
 @import "c-head-sticky"; // Sticky header styles
-@import "c-dropdown"; // Desktop Dropdown 
+// @import "c-dropdown"; // Desktop Dropdown  // TODO - Delete this file, no longer used
 @import "c-subnav"; // Navigation used in mobile and dropdown
+@import "c-navigation"; // Navgigation - // TODO - remove redundant styles from above references for old nav
 @import "c-subscribe"; // Subscribe
 @import "c-search"; // Search 
 @import "c-articles"; // + Metadata
@@ -45,7 +46,7 @@
 @import "c-block-subscribe"; // Subscribe block on dark blue bg
 @import "c-block-home"; // Home page hero
 @import "c-clients";
-@import "c-more";
+// @import "c-more"; // TODO - Delete this file, no longer used
 @import "c-agenda";
 @import "c-table";
 @import "c-foot";

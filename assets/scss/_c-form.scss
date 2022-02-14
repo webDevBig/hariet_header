@@ -59,6 +59,10 @@
       color: $color-white !important;
     }
   }
+
+  &--meeting-link {
+      line-break: anywhere;
+  }
 }
 
 /*.c-subscribe .c-form--subscribe,*/ .c-block-home .c-form--subscribe {

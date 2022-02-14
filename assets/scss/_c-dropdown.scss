@@ -302,7 +302,10 @@
     position: relative;
     margin-left: rem-size(-2px);
 
-    &--01 {
+    /*
+        // TODO - These need to be removed from the styles repo and html updated with inline background-url etc
+        
+        &--01 {
         background-image: url(#{$cdn-url}media/dckc0wby/communications.svg);
         background-size: rem-size(40px 40px);
     }
@@ -345,9 +348,9 @@
     &--09 {
         background-image: url(#{$cdn-url}media/kyyim3ww/platform.svg);
         background-size: rem-size(30px 40px);
-    }
+    }*/
 
-    &--10 {
+    /*&--10 {
         background-image: url(#{$cdn-url}media/soaadarb/internal-communications.svg);
         background-size: rem-size(40px 32px);
     }
@@ -375,34 +378,34 @@
     &--15 {
         background-image: url(#{$cdn-url}media/3llpcnjm/frontline.svg);
         background-size: rem-size(35px 40px);
-    }
+    }*/
 
-    &--17 {
+    /*&--17 {
         background-image: url(#{$cdn-url}media/010hkddu/services.svg);
         background-size: rem-size(30px 40px);
-    }
+    }*/
 
-    &--18 {
+    /*&--18 {
         background-image: url(#{$cdn-url}media/d1gchcc4/partner.svg);
         background-size: rem-size(40px 40px);
-    }
+    }*/
 
-    &--19 {
+    /*&--19 {
         background-image: url(#{$cdn-url}media/huxdcljr/culture.svg);
         background-size: rem-size(40px 40px);
-    }
+    }*/
 
-    &--20 {
+    /*&--20 {
         background-image: url(#{$cdn-url}media/4h1nw1h3/contact.svg);
         background-size: rem-size(40px 40px);
-    }
+    }*/
 
-    &--21 {
+    /*&--21 {
         background-image: url(#{$cdn-url}media/w0ljyatw/unily-app.svg);
         background-size: rem-size(40px 40px);
-    }
+    }*/
 
-    &--22 {
+    /*&--22 {
         background-image: url(#{$cdn-url}media/3dflgb3s/watch-demo.svg);
         background-size: rem-size(40px 25.6px);
     }
@@ -410,5 +413,5 @@
     &--23 {
         background-image: url(#{$cdn-url}media/f03dqdob/security.svg);
         background-size: rem-size(30.4px 38px);
-    }
+    }*/
 }

@@ -1,38 +1,7 @@
-@media all and (min-width:1000px) {
-    /* Navbar */
+// Navigation
 
-    .navbar-inner {
-        box-shadow: none;
-        border: none;
-    }
-
-    .navbar-inner .brand {
-        margin-top: 14px;
-        display: block;
-    }
-
-    .navbar .nav > li {
-        float: left;
-    }
-
-    .navbar .nav > li > a:hover,
-    .navbar .nav > li > a:active,
-    .navbar .nav > li > a:focus,
-    .navbar .nav > li > a.active,
-    .navbar .nav > .active > a,
-    .navbar .nav > .active > a:hover,
-    .navbar .nav > .active > a:focus,
-    .active-menu {
-        background: #a1a1a1 !important;
-        color: #fff !important;
-    }
-
-    .navbar .nav > li > a {
-        float: none;
-        text-decoration: none;
-        text-shadow: none;
-    }
-
+@media all and (min-width: $breakpoint-head) {
+    
     .dropdown-menu > li {
         /* position: relative; */
         -webkit-user-select: none;
@@ -63,8 +32,8 @@
         font-size: 1rem;
         clear: both;
         white-space: nowrap;
-        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #1c1c1b;
+        font-family: $font-alt;
+        color: $color-unily-black;
         font-weight: bold;
         text-transform: uppercase;
 
@@ -75,7 +44,7 @@
 
     .dropdown-menu > li > a span.border,
     .dropdown-menu.thirdlevel > li > a {
-        background-image: linear-gradient(#333, #333);
+        background-image: linear-gradient($color-04, $color-04);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 3px;
@@ -89,32 +58,34 @@
         background-size: 100% 3px;
     }
 
-
-    .c-nav__link::after,
-    .c-nav__link.active:after {
-/*        transform: rotate(90deg);*/
-        margin: 0 0 0 9px;
-        transition: hover .3s;
-        width: 6px;
-        height: 11px;
-        display: inline-block;
-        line-height: 1em;
-        vertical-align: middle;
-        margin-bottom: 3px;
-        content: '';
-        visibility: hidden;
-        background-image: url(../../assets/img/arrow-right-white_new.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
-        border: none;
-        top: 0;
-    }
+	.dropdown .c-nav__link,
+    .dropdown .c-nav__link.active {
+		span {
+			margin-right: rem-size(9px);	
+		}
+		
+		&::after {
+			margin: 0 0 3px 0;
+			transition: hover .3s;
+			width: 11px;
+			display: inline-block;
+			line-height: 1em;
+			vertical-align: middle;
+			content: '';
+			visibility: hidden;
+			background-image: url(#{$cdn-url}media/af1hepjj/down-arrow-white.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: relative;
+			border: none;
+			top: 0;	
+		}
+	}
 
     .dropdown:hover .c-nav__link::after {
         visibility: visible;
     }
-
 
     .c-nav__item:hover .c-nav__text {
         background-size: 100% 3px;
@@ -134,8 +105,7 @@
 
     .dropdown .firstlevel {
         position: absolute;
-        box-shadow: rgb(0 0 0 / 12%) 0px 4px 64px;
-/*        filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));*/
+        filter: drop-shadow(5px 5px 10px rgba(28, 28, 27, 0.3));
         border: none;
         z-index: 9;
         background-color: white;
@@ -149,11 +119,10 @@
 
     .c-nav__item {
         justify-content: center;
-    }
-
-    .c-nav__item {
-        padding: 0;
-        margin: 0 1em;
+		
+		&.dropdown {
+			padding-right:0;
+		}
     }
 
     .c-nav__item:hover .firstlevel {
@@ -179,9 +148,10 @@
         top: 0;
         list-style: none;
         color: rgb(0, 45, 89);
-        background-color: #f5f5f5;
+        background-color: $color-unily-grey-1;
         visibility: hidden;
-        box-shadow: rgb(0 0 0 / 12%) 0px 4px 64px;
+//        box-shadow: rgba(0, 0, 0, 0.12) 9px 5px 24px;
+        box-shadow: rgba(28, 28, 27, 0.3) 9px 5px 24px;
         border-radius: 8px;
     }
 
@@ -194,27 +164,24 @@
     .twolevel-item::after {
         width: 6px;
         height: 11px;
+		margin: 0 0 1px 7px;
         display: inline-block;
         line-height: 1em;
         vertical-align: middle;
         filter: invert(1);
         content: '';
         visibility: hidden;
-        background-image: url(../../assets/img/arrow-right-white_new.svg);
+        background-image: url(#{$cdn-url}media/1yul22mo/arrow-right-white.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        margin-left: 7px;
-        margin-bottom: 5px;
     }
 
     .twolevel:hover .twolevel-item::after {
         visibility: visible;
     }
 
-
-
     .dropdown .firstlevel.sub-menu-clm-three {
-        width: 700px;
+       width: 700px;
         -webkit-columns: 3;
         -moz-columns: 3;
         columns: 3;
@@ -222,7 +189,7 @@
     }
 
     .dropdown .firstlevel.sub-menu-clm-three li {
-         width: auto;
+        width: auto;
         list-style: none;
         padding: 8px 0;
         margin: 0;
@@ -230,12 +197,12 @@
 
     .dropdown .firstlevel.sub-menu-clm-three li a {
         display: flex;
-        align-items: center;
+    align-items: center;
         font-size: 1rem;
         clear: both;
         white-space: nowrap;
         font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #1c1c1b;
+        color: $color-unily-black;
         font-weight: bold;
         text-transform: uppercase;
 
@@ -247,7 +214,7 @@
 
     .dropdown .firstlevel.sub-menu-clm-three li a span.border {
         padding: 0.25rem 0;
-        background-image: linear-gradient(#333, #333);
+        background-image: linear-gradient($color-04, $color-04);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 3px;
@@ -257,7 +224,6 @@
     .dropdown .firstlevel.sub-menu-clm-three li a:hover span.border {
         background-size: 100% 3px;
     }
-
 
     .firstlevel::after {
         content: "";
@@ -271,51 +237,15 @@
         transform: rotate(45deg);
     }
 
-    .c-head.c-head--subnav {
-        color: #fff;
-        background: #112A3F;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 650;
-    }
-
-    .c-head--subnav:before {
-        display: none;
-    }
-
-    .c-head--subnav .c-nav__text {
-        background-image: linear-gradient(#fff, #fff);
-        background-size: 0% 3px;
-        color: white;
-    }
-
     .c-nav .c-nav__link.active .c-nav__text {
-        background-image: linear-gradient(#fff, #fff);
+        background-image: linear-gradient($color-white, $color-white);
         background-size: 0% 3px;
         color: white;
-    }
-
-    .c-head--subnav .c-nav__link:hover .c-nav__text {
-        background-size: 100% 3px;
     }
 
     .c-nav__item:hover .c-nav__link.active .c-nav__text {
         background-size: 100% 3px;
     }
-
-    .c-head--subnav .c-logo__img {
-        display: block;
-    }
-
-    .c-head--subnav .c-logo__img--alt {
-        display: none;
-    }
-
-    .c-head--subnav .c-nav__link--search:after {
-        background: url(https://unilyweb2020dev.azureedge.net/media/zjmlsevn/search-white.svg) no-repeat;
-    }
-
     .dropdown-menu .twolevel-item img {
         max-width: 100%;
         width: auto;
@@ -335,30 +265,11 @@
         margin: 0 7px 0 0;
         padding: 0;
     }
-
 }
 
-
-
-
-
-
 /*mobile resize*/
-
-
-
-@media screen and (max-width:768px) {
-    .navbar-nav {
-        margin-top: 15px;
-    }
-
-    .navbar .nav > li {
-        width: 100% !important;
-        height: 55px !important;
-        border-top: 1px solid #ddd;
-        background: #fff !important;
-    }
-
+@media screen and (max-width: $breakpoint-md) {
+    
     #main-menu {
         width: 100%;
         padding-left: 0px !important;
@@ -370,21 +281,17 @@
     }
 }
 
-@media all and (max-width:991px) {
-
-    .navbar .nav > li > .dropdown-menu {
-        display: none !important;
+@media (min-width: $breakpoint-head) and (max-width: 1100px) {
+	.dropdown .c-nav__link span,
+    .dropdown .c-nav__link.active span {
+        margin-right: rem-size(6px);
     }
+}
+
+@media all and (max-width: $breakpoint-lg-down) {
 
     .dropdown .firstlevel,
     .dropdown .thirdlevel {
         display: none;
     }
-}
-
-@media all and (max-width:999px) {
-    .c-nav__item img.arrow_icon {
-        display: none;
-    }
-
 }

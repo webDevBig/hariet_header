@@ -1,203 +1,204 @@
 // Footer
 
 .c-foot {
-  color: $color-unily-dark-blue;
-  font-size: rem-size(16px);
-  padding-bottom: rem-size(20px) !important;
-
-  a {
-    color: $color-unily-dark-blue;
-  }
-
-  &__row {
-    @media (min-width: $breakpoint-md) {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: rem-size(40px);
-    }
-  }
-
-  &__col {
-    @media (min-width: $breakpoint-md) {
-      flex: 1 1 auto;
-
-      &--contact {
-        flex: 0 0 33.3333%;
-        text-align: right;
-        font-size: rem-size(14px);
-      }
-    }
-  }
-
-  &-nav {
-    &__row {
-      margin-top: rem-size(30px);
-      margin-bottom: rem-size(30px);
-
-      @media (min-width: $breakpoint-md) {
-        display: flex;
-        justify-content: space-between;
-        margin: rem-size(70px -10px 0 -10px);
-      }
-    }
-    &__col {
-      @media (min-width: $breakpoint-md) {
-        flex: 0 0 25%;
-        padding: rem-size(0 10px);
-      }
-    }
-  }
-
-  &__heading {
-    font-size: rem-size(18px);
-    margin-bottom: rem-size(20px);
-    font-weight: bold;
-
-    &--contact {
-      font-size: rem-size(18px); 
-      margin-bottom: rem-size(20px);
-
-      @media (min-width: $breakpoint-md) {
-        font-size: rem-size(16px);
-      }
-    }
-  }
-
-  &__nav {
-    list-style: none;
-    margin: rem-size(0 0 20px 0);
-    padding: 0;
-
-    @media (max-width: $breakpoint-md-down) {
-      margin-bottom: rem-size(35px);
-    }
-
-    li {
-      margin-bottom: rem-size(20px); 
-    }
+    color: $color-unily-black;
+    font-size: rem-size(16px);
+    padding-bottom: rem-size(20px) !important;
 
     a {
-      background-image: linear-gradient($color-unily-dark-blue, $color-unily-dark-blue);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size .3s;
-      padding-bottom: 2px;
-
-      &:hover {
-        background-size: 100% 2px;
-      }
-    }
-  }
-
-  &__logo {
-    font: 0/0 a;
-    margin-bottom: rem-size(10px);
-  }
-
-  &__col--contact a {
-    span {
-      background-image: linear-gradient($color-unily-dark-blue, $color-unily-dark-blue);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size .3s;
-      padding-bottom: 2px;
+        color: $color-unily-black;
     }
 
-    &:hover span {
-      background-size: 100% 2px;
+    &__row {
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: rem-size(40px);
+        }
     }
-  }
+
+    &__col {
+        @media (min-width: $breakpoint-md) {
+            flex: 1 1 auto;
+
+            &--contact {
+                flex: 0 0 33.3333%;
+                text-align: right;
+                font-size: rem-size(14px);
+            }
+        }
+    }
+
+    &-nav {
+        &__row {
+            margin-top: rem-size(30px);
+            margin-bottom: rem-size(30px);
+
+            @media (min-width: $breakpoint-md) {
+                display: flex;
+                justify-content: space-between;
+                margin: rem-size(70px -10px 0 -10px);
+            }
+        }
+
+        &__col {
+            @media (min-width: $breakpoint-md) {
+                flex: 0 0 25%;
+                padding: rem-size(0 10px);
+            }
+        }
+    }
+
+    &__heading {
+        font-size: rem-size(18px);
+        margin-bottom: rem-size(20px);
+        font-weight: bold;
+
+        &--contact {
+            font-size: rem-size(18px);
+            margin-bottom: rem-size(20px);
+
+            @media (min-width: $breakpoint-md) {
+                font-size: rem-size(16px);
+            }
+        }
+    }
+
+    &__nav {
+        list-style: none;
+        margin: rem-size(0 0 20px 0);
+        padding: 0;
+
+        @media (max-width: $breakpoint-md-down) {
+            margin-bottom: rem-size(35px);
+        }
+
+        li {
+            margin-bottom: rem-size(20px);
+        }
+
+        a {
+            background-image: linear-gradient($color-unily-black, $color-unily-black);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            padding-bottom: 2px;
+
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+
+    &__logo {
+        font: 0/0 a;
+        margin-bottom: rem-size(10px);
+    }
+
+    &__col--contact a {
+        span {
+            background-image: linear-gradient($color-unily-black, $color-unily-black);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            padding-bottom: 2px;
+        }
+
+        &:hover span {
+            background-size: 100% 2px;
+        }
+    }
 }
 
 .c-popular {
-  text-align: center;
-  font-size: rem-size(14px);
-  padding-bottom: rem-size(30px);
-
-  @media (min-width: $breakpoint-md) {
-    padding-bottom: rem-size(40px);
-  }
-
-  &__row {
-    display: none;
+    text-align: center;
+    font-size: rem-size(14px);
+    padding-bottom: rem-size(30px);
 
     @media (min-width: $breakpoint-md) {
-      justify-content: center;
-      margin: rem-size(0 -10px);
+        padding-bottom: rem-size(40px);
     }
 
-    &.active {
-      display: block;
+    &__row {
+        display: none;
 
-      @media (min-width: $breakpoint-md) {
-        display: flex;
-      }
+        @media (min-width: $breakpoint-md) {
+            justify-content: center;
+            margin: rem-size(0 -10px);
+        }
+
+        &.active {
+            display: block;
+
+            @media (min-width: $breakpoint-md) {
+                display: flex;
+            }
+        }
     }
-  }
 
-  &__col {
-    @media (min-width: $breakpoint-md) {
-      flex: 0 1 rem-size(260px);
-      padding: rem-size(0 10px);
+    &__col {
+        @media (min-width: $breakpoint-md) {
+            flex: 0 1 rem-size(260px);
+            padding: rem-size(0 10px);
 
-      .c-popular__heading {
-        margin: rem-size(40px 0 25px 0);
-      }
+            .c-popular__heading {
+                margin: rem-size(40px 0 25px 0);
+            }
+        }
     }
-  }
 
-  &__heading {
-    font-size: rem-size(22px);
-    font-weight: bold;
-    margin: rem-size(30px 0 15px 0);
-  }
-
-  &__link {
-    background-image: none !important;
-
-    &:after {
-      content: " ";
-      display: inline-block;
-      width: rem-size(16px);
-      height: rem-size(16px);
-      vertical-align: middle;
-      margin-left: rem-size(5px);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(#{$cdn-url}media/vs5dubzh/plus-navy.svg);
-      background-size: rem-size(16px 16px);
+    &__heading {
+        font-size: rem-size(22px);
+        font-weight: bold;
+        margin: rem-size(30px 0 15px 0);
     }
-  }
 
-  .c-popular__link.active:after {
-    background-image: url(#{$cdn-url}media/fath3k52/minus-navy.svg);
-  }
+    &__link {
+        background-image: none !important;
 
-  &__nav {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: rem-size(15px);
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+        &:after {
+            content: " ";
+            display: inline-block;
+            width: rem-size(16px);
+            height: rem-size(16px);
+            vertical-align: middle;
+            margin-left: rem-size(5px);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(#{$cdn-url}media/vs5dubzh/plus-navy.svg);
+            background-size: rem-size(16px 16px);
+        }
     }
-  }
 
-  a {
-    background-image: linear-gradient($color-unily-dark-blue, $color-unily-dark-blue);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    padding-bottom: 3px;
-
-    &:hover {
-      background-size: 100% 2px;
+    .c-popular__link.active:after {
+        background-image: url(#{$cdn-url}media/fath3k52/minus-navy.svg);
     }
-  }
+
+    &__nav {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: rem-size(15px);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    a {
+        background-image: linear-gradient($color-unily-black, $color-unily-black);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        padding-bottom: 3px;
+
+        &:hover {
+            background-size: 100% 2px;
+        }
+    }
 }

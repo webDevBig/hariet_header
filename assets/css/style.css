@@ -1376,338 +1376,6 @@ body.sticky-header .c-page--top {
   padding-top: 3.125rem;
 }
 
-@media (max-width: 999px) {
-  .c-dropdown {
-    display: none !important;
-  }
-}
-@media (min-width: 1000px) {
-  .c-dropdown {
-    position: relative;
-    display: block;
-  }
-  .c-dropdown__container {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    justify-content: center;
-    width: 1500px;
-  }
-  .c-dropdown__row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 82.5rem;
-    flex-wrap: nowrap;
-    /*      &--about {
-      justify-content: center;
-    }*/
-  }
-  .c-dropdown__col {
-    flex: 0 1 auto;
-    color: #1C1C1B !important;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  .c-dropdown__col--solutions, .c-dropdown__col--features {
-    flex: 1;
-  }
-  .c-dropdown__col--solutions {
-    max-width: 45rem;
-  }
-  .c-dropdown__col--industries {
-    flex: 0 0 35%;
-  }
-  .c-dropdown__col--subscribe {
-    margin-top: 8.125rem;
-  }
-  .c-dropdown__box {
-    padding: 2.1875rem;
-    margin-top: 2.5rem;
-    border-radius: 0.3125rem;
-    width: 23.75rem;
-  }
-  .c-dropdown__box > *:first-child {
-    margin-top: 0;
-  }
-  .c-dropdown__box + .c-dropdown__box {
-    margin-top: 1.25rem;
-  }
-  .c-dropdown__box .c-subnav__item:last-child {
-    margin-bottom: 0;
-  }
-  .c-dropdown__heading {
-    font-weight: normal;
-    font-size: 1.125rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.25rem;
-  }
-  .c-dropdown__item {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 1.875rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    flex: 0 0 33.33%;
-    max-width: 20rem;
-  }
-  .c-dropdown__link {
-    min-height: 1.625rem;
-    text-transform: uppercase;
-    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: #1C1C1B !important;
-    max-width: 17.5rem;
-  }
-  .c-dropdown__title {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 0.125rem;
-  }
-  .c-dropdown__desc {
-    font-size: 1rem;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    display: block;
-    text-transform: none;
-    max-width: 18.75rem;
-  }
-  .c-dropdown__nav {
-    padding: 0;
-    margin-top: 2.5rem;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1.125rem;
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  .c-dropdown__nav--centered {
-    justify-content: center;
-  }
-  .c-dropdown__nav--about .c-dropdown__item {
-    flex: 0 0 33.333333%;
-    /*max-width: none;*/
-    /* &:nth-child(1) {
-      .c-dropdown__link {
-        margin-left: rem-size(50px);
-      }
-    }
-
-    &:nth-child(2) {
-      .c-dropdown__link {
-        margin-left: rem-size(-50px);
-      }
-    }
-
-    &:nth-child(3) {
-      .c-dropdown__link {
-        margin-right: rem-size(-70px);
-      }
-    }
-
-    &:nth-child(3), &:nth-child(4) {
-      .c-dropdown__link {
-        margin-left: auto;
-      }
-    } */
-  }
-  .c-dropdown__nav--features .c-dropdown__item {
-    flex: 0 0 25%;
-  }
-  .c-dropdown__nav--solutions .c-dropdown__item {
-    flex: 0 0 50%;
-  }
-
-  .c-dropdown__col--features {
-    flex: 1;
-  }
-
-  .c-dropdown .c-nav__subnav {
-    display: block;
-  }
-  .c-dropdown__wrap {
-    display: none;
-  }
-  .c-dropdown__wrap.active {
-    display: block;
-  }
-
-  .c-dropdown__wrap.active .c-dropdown__link,
-.c-dropdown__wrap.active .c-articles,
-.c-dropdown__wrap.active .c-dropdown__heading,
-.c-dropdown__wrap.active .c-subnav,
-.c-dropdown__wrap.active .c-more,
-.c-dropdown__wrap.active .c-dropdown__box {
-    animation: dropdown 1000ms;
-  }
-
-  .c-dropdown .c-subnav {
-    max-width: 19.375rem;
-  }
-
-  .c-dropdown__heading + .c-subnav {
-    margin-top: 1.875rem;
-  }
-
-  .c-dropdown__heading + .c-dropdown__nav {
-    margin-top: 0.9375rem;
-  }
-
-  .c-dropdown__wrap--solutions .c-dropdown__row {
-    max-width: 77.5rem;
-  }
-
-  .c-dropdown__wrap--features .c-dropdown__row {
-    max-width: 77.5rem;
-  }
-
-  .c-dropdown__wrap--about .c-dropdown__row {
-    max-width: 70rem;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1100px) {
-  .c-dropdown__wrap--about .c-dropdown__row {
-    padding-left: 5.3125rem;
-  }
-}
-@media (min-width: 1000px) {
-  .c-dropdown__wrap--insights .c-dropdown__row {
-    max-width: 76.875rem;
-  }
-}
-@media (min-width: 1000px) and (max-height: 600px) {
-  .c-dropdown__box,
-.c-dropdown__heading {
-    margin-top: 0.625rem;
-  }
-
-  .c-dropdown__heading + .c-dropdown__nav {
-    margin-top: -0.625rem;
-  }
-
-  .c-dropdown__nav {
-    margin-top: 0.9375rem;
-  }
-
-  .c-dropdown__item {
-    margin-bottom: 0.9375rem;
-  }
-}
-@keyframes dropdown {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.c-dropdown__icon {
-  display: block;
-  height: 2.5rem;
-  width: 2.875rem;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  position: relative;
-  transform: scale(0.85);
-  position: relative;
-  margin-left: -0.125rem;
-}
-.c-dropdown__icon--01 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/dckc0wby/communications.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--02 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/cfudyntm/publishing.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--03 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/cu5m5pko/search.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--04 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/jmwp1kxz/social.svg);
-  background-size: 2.875rem 2.5rem;
-}
-.c-dropdown__icon--05 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/0ovkzti5/sites.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--06 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/lw5f2224/analytics.svg);
-  background-size: 2.5rem 1.4375rem;
-}
-.c-dropdown__icon--07 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/ow0h0xoy/mobile.svg);
-  background-size: 2.1875rem 2.5rem;
-}
-.c-dropdown__icon--08 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/1q5l5o0d/integrations.svg);
-  background-size: 2.0625rem 2.5rem;
-}
-.c-dropdown__icon--09 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/kyyim3ww/platform.svg);
-  background-size: 1.875rem 2.5rem;
-}
-.c-dropdown__icon--10 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/soaadarb/internal-communications.svg);
-  background-size: 2.5rem 2rem;
-}
-.c-dropdown__icon--11 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/iv0gjmug/knowledge.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--12 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/huxdcljr/culture.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--13 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/gm2lw0lk/networked-enterprise.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--14 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/y3fcovx2/productivity.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--15 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/3llpcnjm/frontline.svg);
-  background-size: 2.1875rem 2.5rem;
-}
-.c-dropdown__icon--17 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/010hkddu/services.svg);
-  background-size: 1.875rem 2.5rem;
-}
-.c-dropdown__icon--18 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/d1gchcc4/partner.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--19 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/huxdcljr/culture.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--20 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/4h1nw1h3/contact.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--21 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/w0ljyatw/unily-app.svg);
-  background-size: 2.5rem 2.5rem;
-}
-.c-dropdown__icon--22 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/3dflgb3s/watch-demo.svg);
-  background-size: 2.5rem 1.6rem;
-}
-.c-dropdown__icon--23 {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/f03dqdob/security.svg);
-  background-size: 1.9rem 2.375rem;
-}
-
 .c-subnav {
   padding-left: 5.3125rem;
   list-style: none;
@@ -1795,44 +1463,6 @@ body.sticky-header .c-page--top {
     font-weight: bold;
     color: #fff;
   }
-  .c-subnav__link--more {
-    justify-content: flex-start;
-  }
-  .c-subnav__link--more:after {
-    content: " ";
-    display: inline-block;
-    width: 0.75rem;
-    height: 0.75rem;
-    vertical-align: 0;
-    margin-left: 0.3125rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/irihbdfs/plus-white.svg);
-    background-size: 0.75rem 0.75rem;
-  }
-  .c-subnav__link--more.active:after {
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/34fnwkxi/minus-white.svg);
-  }
-}
-@media (min-width: 1000px) {
-  .c-subnav__link--more:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0.75rem;
-    height: 0.75rem;
-    margin-left: 0.3125rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/vs5dubzh/plus-navy.svg);
-    background-size: 0.75rem 0.75rem;
-    left: 100%;
-    top: 50%;
-    margin-top: -0.5rem;
-  }
-  .c-subnav__link--more.before:after {
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/fath3k52/minus-navy.svg);
-  }
 }
 @media (min-width: 1000px) {
   .c-subnav__link {
@@ -1859,42 +1489,10 @@ body.sticky-header .c-page--top {
     border-bottom-color: #112A3F;
   }
 
-  .c-head--subnav {
-    color: #112A3F;
-    background: #fff;
-  }
-  .c-head--subnav:before {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: " ";
-    display: block;
-  }
-  .c-head--subnav .c-dropdown__link,
-.c-head--subnav .c-subnav__link {
-    color: #112A3F;
-  }
-  .c-head--subnav .c-nav__text {
-    color: #112A3F;
-    background-image: linear-gradient(#112A3F, #112A3F);
-  }
-  .c-head--subnav .c-nav__link--search:after {
-    background-image: url(https://unilyweb2020dev.azureedge.net/media/30xkfckv/search-navy.svg);
-  }
-  .c-head--subnav .c-logo__img {
-    display: none;
-  }
-  .c-head--subnav .c-logo__img--alt {
-    display: block;
-  }
-
-  .c-head--transparent:not(.c-head--subnav) .c-nav__text {
+  .c-head--transparent .c-nav__text {
     text-shadow: 2px 2px 3px #222;
   }
-  .c-head--transparent:not(.c-head--subnav) .c-nav__link--search:after {
+  .c-head--transparent .c-nav__link--search:after {
     filter: drop-shadow(2px 2px 2px #222);
     -webkit-transform: translateZ(0);
     -webkit-perspective: 1000;
@@ -1916,13 +1514,282 @@ body.sticky-header .c-page--top {
   margin-bottom: 0;
 }
 
-.c-subnav__item--more .c-subnav {
-  display: none;
-}
-.c-subnav__item--more .c-subnav.active {
-  display: block;
-}
+@media all and (min-width: 1000px) {
+  .dropdown-menu > li {
+    /* position: relative; */
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    list-style: none;
+    padding: 7px 0px;
+    margin: 0 2rem;
+  }
 
+  .dropdown-menu > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    clear: both;
+    white-space: nowrap;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1C1C1B;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: fit-content;
+    line-height: calc(24/18);
+  }
+
+  .dropdown-menu > li > a span.border,
+.dropdown-menu.thirdlevel > li > a {
+    background-image: linear-gradient(#333333, #333333);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    padding: 0.25rem 0;
+    transition: background 0.3s;
+    line-height: 1;
+  }
+
+  .dropdown-menu > li:hover > a span.border,
+.dropdown-menu.thirdlevel > li:hover > a {
+    background-size: 100% 3px;
+  }
+
+  .dropdown .c-nav__link span,
+.dropdown .c-nav__link.active span {
+    margin-right: 0.5625rem;
+  }
+  .dropdown .c-nav__link::after,
+.dropdown .c-nav__link.active::after {
+    margin: 0 0 3px 0;
+    transition: hover 0.3s;
+    width: 11px;
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+    content: "";
+    visibility: hidden;
+    background-image: url(https://unilyweb2020dev.azureedge.net/media/af1hepjj/down-arrow-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    border: none;
+    top: 0;
+  }
+
+  .dropdown:hover .c-nav__link::after {
+    visibility: visible;
+  }
+
+  .c-nav__item:hover .c-nav__text {
+    background-size: 100% 3px;
+  }
+
+  .nav > li > a,
+.nav > li {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    border: none;
+    padding: 1.3rem 0rem;
+    z-index: 9;
+  }
+
+  .dropdown .firstlevel {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 64px;
+    border: none;
+    z-index: 9;
+    background-color: white;
+    border-radius: 8px;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8) translateZ(0px) translateX(-9px);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .c-nav__item {
+    justify-content: center;
+  }
+  .c-nav__item.dropdown {
+    padding-right: 0;
+  }
+
+  .c-nav__item:hover .firstlevel {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateZ(0px) translateX(-9px);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .features_item .firstlevel {
+    transform: scale(0.8) translateZ(0px) translateX(5px);
+  }
+
+  .features_item.c-nav__item:hover .firstlevel {
+    transform: scale(1) translateZ(0px) translateX(5px);
+  }
+
+  .dropdown .thirdlevel {
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0s;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    list-style: none;
+    color: #002d59;
+    background-color: #F5F5F5;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.12) 9px 5px 24px;
+    border-radius: 8px;
+  }
+
+  .twolevel:hover .sub-menu.thirdlevel {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .twolevel-item::after {
+    width: 6px;
+    height: 11px;
+    margin: 0 0 1px 7px;
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+    filter: invert(1);
+    content: "";
+    visibility: hidden;
+    background-image: url(https://unilyweb2020dev.azureedge.net/media/1yul22mo/arrow-right-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .twolevel:hover .twolevel-item::after {
+    visibility: visible;
+  }
+
+  .dropdown .firstlevel.sub-menu-clm-three {
+    width: 700px;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    padding: 1.3rem 2rem;
+  }
+
+  .dropdown .firstlevel.sub-menu-clm-three li {
+    width: auto;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+  }
+
+  .dropdown .firstlevel.sub-menu-clm-three li a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    clear: both;
+    white-space: nowrap;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1C1C1B;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: fit-content;
+    line-height: calc(24/18);
+  }
+
+  .dropdown .firstlevel.sub-menu-clm-three li a span.border {
+    padding: 0.25rem 0;
+    background-image: linear-gradient(#333333, #333333);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background 0.3s;
+  }
+
+  .dropdown .firstlevel.sub-menu-clm-three li a:hover span.border {
+    background-size: 100% 3px;
+  }
+
+  .firstlevel::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 2px 0 0 0;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 47%;
+    transform: rotate(45deg);
+  }
+
+  .c-nav .c-nav__link.active .c-nav__text {
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 0% 3px;
+    color: white;
+  }
+
+  .c-nav__item:hover .c-nav__link.active .c-nav__text {
+    background-size: 100% 3px;
+  }
+
+  .dropdown-menu .twolevel-item img {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+  }
+
+  .dropdown-menu .twolevel-item img.unily-icon {
+    margin: 0 0 3px;
+  }
+
+  .dropdown-menu .twolevel-item .img_box {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px 0 0;
+    padding: 0;
+  }
+}
+/*mobile resize*/
+@media screen and (max-width: 768px) {
+  #main-menu {
+    width: 100%;
+    padding-left: 0px !important;
+    margin-right: -7px !important;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .dropdown .c-nav__link span,
+.dropdown .c-nav__link.active span {
+    margin-right: 0.375rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .dropdown .firstlevel,
+.dropdown .thirdlevel {
+    display: none;
+  }
+}
 /*.c-subscribe {
   max-width: rem-size(720px);
   margin-left: auto;
@@ -3303,6 +3170,9 @@ p.c-metadata__item + p.c-metadata__item {
 }
 .c-form--subscribe .hs-richtext {
   color: #fff !important;
+}
+.c-form--meeting-link {
+  line-break: anywhere;
 }
 
 /*.c-subscribe .c-form--subscribe,*/
@@ -4954,136 +4824,6 @@ textarea.hs-input {
   width: auto;
 }
 
-.c-more {
-  margin-top: 1.25rem;
-  min-width: 15rem;
-}
-.c-more__heading {
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #112A3F;
-  font-size: 1.125rem;
-  margin-bottom: 0.625rem;
-  cursor: pointer;
-  display: inline-block;
-}
-.c-more__container {
-  height: 12.5rem;
-  overflow: auto;
-  position: relative;
-  display: none;
-}
-.c-more__container.active {
-  display: block;
-}
-.c-more__container:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0.625rem;
-  height: 1.25rem;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%);
-  z-index: 1000;
-}
-.c-more__container:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0.625rem;
-  height: 1.25rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
-}
-.c-more__list {
-  margin: 0;
-  padding: 0.9375rem 0rem;
-  list-style: none;
-  position: relative;
-  height: 12.5rem;
-}
-.c-more__list li {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 1.25rem;
-  padding-right: 1.5625rem;
-}
-.c-more__list li:last-child {
-  margin-bottom: 0.9375rem;
-}
-.c-more__list a {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #112A3F;
-}
-@media (min-width: 1000px) {
-  .c-more__list a {
-    position: relative;
-  }
-  .c-more__list a:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 0;
-    border-bottom: 0.125rem solid transparent;
-    transition: all 0.2s ease-in-out;
-  }
-  .c-more__list a:hover:after {
-    width: 100%;
-    border-bottom-color: #112A3F;
-  }
-}
-
-.c-more__heading:after {
-  content: " ";
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  vertical-align: 0;
-  margin-left: 0.3125rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/vs5dubzh/plus-navy.svg);
-  background-size: 0.75rem 0.75rem;
-}
-.c-more__heading.active:after {
-  background-image: url(https://unilyweb2020dev.azureedge.net/media/fath3k52/minus-navy.svg);
-}
-
-.c-dropdown__box .c-more {
-  margin-top: 1.25rem;
-  margin-left: 0;
-}
-.c-dropdown__box .c-more__container:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0.625rem;
-  height: 1.25rem;
-  background: linear-gradient(0deg, rgba(245, 245, 245, 0) 0%, whitesmoke 100%);
-  z-index: 1000;
-}
-.c-dropdown__box .c-more__container:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0.625rem;
-  height: 1.25rem;
-  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, whitesmoke 100%);
-}
-
 @media (min-width: 768px) {
   .agenda {
     padding-left: 40px;
@@ -5442,12 +5182,12 @@ textarea.hs-input {
 }
 
 .c-foot {
-  color: #112A3F;
+  color: #1C1C1B;
   font-size: 1rem;
   padding-bottom: 1.25rem !important;
 }
 .c-foot a {
-  color: #112A3F;
+  color: #1C1C1B;
 }
 @media (min-width: 768px) {
   .c-foot__row {
@@ -5511,7 +5251,7 @@ textarea.hs-input {
   margin-bottom: 1.25rem;
 }
 .c-foot__nav a {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -5526,7 +5266,7 @@ textarea.hs-input {
   margin-bottom: 0.625rem;
 }
 .c-foot__col--contact a span {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -5607,7 +5347,7 @@ textarea.hs-input {
   margin-bottom: 0;
 }
 .c-popular a {
-  background-image: linear-gradient(#112A3F, #112A3F);
+  background-image: linear-gradient(#1C1C1B, #1C1C1B);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;

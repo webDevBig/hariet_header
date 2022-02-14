@@ -17,9 +17,6 @@ var unilyApp = {
                 if ($('.c-nav__subnav').hasClass('active')) {
                     $('.c-nav__subnav').removeClass('active');
                 }
-                if ($('.c-subnav__link--more').hasClass('active')) {
-                    $('.c-subnav__link--more').removeClass('active').next().removeClass('active');
-                }
             } else {
                 $('.c-head__navigation').addClass('active');
                 $('body').addClass('nav-active');
@@ -49,7 +46,7 @@ var unilyApp = {
             $('.c-search').addClass('active');
             $('.c-head').addClass('c-head--search');
             $('.c-search__field').focus();
-            return false; //event.stopPropagation();
+            return false;
         });
 
         function closeSearch() {
@@ -64,80 +61,12 @@ var unilyApp = {
             closeSearch();
         });
 
-        // Desktop Dropdown
-
-        $('.js-dropdown-link').on('mouseenter', function () {
-            var dataId = $(this).attr("data-link");
-            var activeLink = $(this);
-
-            this.interval = setTimeout(function () {
-                $('.c-nav__link').removeClass('active');
-                activeLink.addClass('active');
-                $('.c-head').addClass('c-head--subnav');
-                $('.c-dropdown__wrap').removeClass('active');
-                $('.c-dropdown__wrap--' + dataId).addClass('active');
-            }, 300);
-        }).on('mouseleave', function () {
-            clearTimeout(this.interval);
-        });
-
-        $('.c-dropdown__wrap a, .c-dropdown__wrap .c-subscribe__form').on('click', function () {
-            event.stopPropagation();
-        });
-
-        function closeDropdown() {
-            if ($('.c-dropdown__wrap').hasClass('active')) {
-                $('.c-dropdown__wrap').removeClass('active');
-                $('.c-head').removeClass('c-head--subnav');
-                $('.c-nav__link').removeClass('active');
-            }
-            if ($('.c-more__heading').hasClass('active')) {
-                $('.c-more__heading').removeClass('active');
-                $('.c-more__container').removeClass('active');
-            }
-        }
-
-        $('.js-nav-link, .js-link-search, .c-nav__btn, .c-logo__img').on('mouseenter', function () {
-            closeDropdown();
-        });
-
-        $(window).on('blur scroll', function () {
-            closeDropdown();
-        });
-
-        $('body').on('mouseleave', function () {
-            closeDropdown();
-        });
-
         // On Document Click
 
         $(document).on('click', function (event) {
-
-            closeDropdown();
-
             if (!$(event.target).closest('.c-search').length && $('.c-search.active').length) {
                 closeSearch();
             }
-        });
-
-        // Navigation More Links
-
-        $('.js-subnav-more').on('click', function () {
-            $(this).toggleClass('active').next().toggleClass('active');
-            return false;
-        });
-
-        // Dropdown More Links
-
-        $('.js-link-more').on('click', function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active').next().removeClass('active');
-            } else {
-                $('.js-link-more').removeClass('active').next().removeClass('active');
-                $(this).addClass('active').next().addClass('active');
-                new SimpleBar($(this).next()[0]);
-            }
-            return false;
         });
 
         // Popular Links Footer

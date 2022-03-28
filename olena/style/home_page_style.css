@@ -1,3 +1,4 @@
+/*
 .medium_width__low_content {
     max-width: 1016px;
     margin: 0 auto;
@@ -58,8 +59,65 @@
 .c-guide__content > * {
     margin-right: 0;
 }
+*/
+
+.c-guide__media {
+    margin-top: 0;
+    padding-right: 20px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.875rem;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .c-guide__content {
+        align-self: center;
+        padding-left: 20px;
+    }
+
+    .c-guide {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1016px;
+        position: relative;
+        /*        max-width: 60rem;*/
+    }
+
+    .d-cards .d-cards-list .c-block-05__content {
+        /*    max-width: 30.9375rem;*/
+        max-width: 498px;
+    }
+
+    .c-guide::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #3ec8ed;
+        z-index: 0;
+        left: 10px;
+        top: 20px;
+    }
+    .c-guide::after {
+        content: '';
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #3ec8ed;
+        z-index: 0;
+        top: 60%;
+    }
+}
+
 
 @media all and (min-width: 768px) {
+    /*
     .d-cards .d-cards-list .c-block-05__content {
         max-width: 31.125rem;
     }
@@ -81,4 +139,5 @@
     .d-cards .d-cards-list .d-single-card {
         margin-bottom: 20px;
     }
+*/
 }

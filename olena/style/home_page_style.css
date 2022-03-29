@@ -116,7 +116,11 @@
 }
 
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 767px) {
+    .d-cards .c-block-05__row .c-block-05__col
+    {
+        justify-content: center;
+    }
     /*
     .d-cards .d-cards-list .c-block-05__content {
         max-width: 31.125rem;

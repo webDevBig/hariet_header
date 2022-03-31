@@ -100,7 +100,6 @@
         border-radius: 50%;
         background-color: #3ec8ed;
         z-index: 0;
-        left: 10px;
         top: 20px;
     }
     .c-guide::after {
